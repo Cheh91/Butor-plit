@@ -1,0 +1,117 @@
+.header{
+    height: 85px;
+    border-bottom: 1px solid red;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &__contact{
+        background-color: #f8f8f8;
+        height: 85px;
+        width: 300px;
+        padding-left: 65px;
+        position: relative;
+        &:before{
+            position: absolute;
+            content: url("../../img/header-phone.png");
+            left: 17px;
+            top: 17px;
+        }
+
+        &-data{
+            color: $grey;
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+        &-number{
+            color: $grey;
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 300;
+        }
+        &-feedback{
+            color: $green;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 500;
+            border-bottom: 1px solid $green;
+            margin-top: 2px;
+        }
+    }
+    &__name{
+        display: flex;
+
+        &-icon{
+            width: 34px;
+            height: 34px;
+            border: 1px solid $green;
+            border-radius: 50%;
+            position: relative;
+            &:before{
+                position: absolute;
+                content: url("../../img/name.png");
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:after{
+                position: absolute;
+                content: "";
+                width: 9px;
+                height: 9px;
+                background-color: $light-green;
+                border-radius: 50%;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        &-wrap{
+            margin-left: 10px;
+        }
+        &-item{
+            font-size: 14px;
+            line-height: 17px;
+            color: $green;
+            font-weight: 600;
+        }
+        &-city{
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 300;
+            color: $grey;
+            margin-top: 5px;
+        }
+    }
+    &__basket{
+        width: 36px;
+        height: 36px;
+        background-color: #F8F8F8;
+        border-radius: 50%;
+        position: relative;
+        &:before{
+            position: absolute;
+            // content: url("../../img/shopping-bag.png");
+            content: "\e90d";
+            font-family: "icomoon";
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $green;
+        }
+        &:after{
+            position: absolute;
+            content: "3";
+            text-align: center;
+            width: 17px;
+            height: 17px;
+            background-color: $green;
+            border-radius: 50%;
+            right: -5px;
+            bottom: -5px;
+            box-shadow: 0px 0px 4px #00642F;
+
+        }
+    }
+}
