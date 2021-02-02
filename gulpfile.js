@@ -37,10 +37,10 @@ const   gulp           = require('gulp'),
         cleanCSS       = require('gulp-clean-css'),
         uglify         = require('gulp-uglify-es').default,
         cache          = require('gulp-cache'),
-        imagemin       = require('gulp-imagemin'),
+        // imagemin       = require('gulp-imagemin'),
         notify         = require('gulp-notify'),
-        jpegrecompress = require('imagemin-jpeg-recompress'),
-        pngquant       = require('imagemin-pngquant'),
+        // jpegrecompress = require('imagemin-jpeg-recompress'),
+        // pngquant       = require('imagemin-pngquant'),
         rimraf         = require('gulp-rimraf'),
         rigger         = require('gulp-rigger'),
         gcmq           = require('gulp-group-css-media-queries'),
@@ -89,16 +89,16 @@ function fonts() {
 function images() {
     return gulp.src(path.src.img)
         .pipe(newer(path.build.img))
-        .pipe(cache(imagemin([
-            imagemin.gifsicle({ interlaced: true }),
-            jpegrecompress({
-                progressive: true,
-                max: 90,
-                min: 80
-            }),
-            pngquant(),
-            imagemin.svgo({ plugins: [{ removeViewBox: false }] })
-        ])))
+        // .pipe(cache(imagemin([
+        //     imagemin.gifsicle({ interlaced: true }),
+        //     jpegrecompress({
+        //         progressive: true,
+        //         max: 90,
+        //         min: 80
+        //     }),
+        //     pngquant(),
+        //     imagemin.svgo({ plugins: [{ removeViewBox: false }] })
+        // ])))
         .pipe(gulp.dest(path.build.img))
         .pipe(browserSync.stream())
 }
