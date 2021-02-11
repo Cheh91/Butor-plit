@@ -12,6 +12,59 @@
     &-footer{
         background-color: $light-green;
     }
+    &__order{
+        max-width: 223px;
+        width: 100%;
+        border: 1px solid $green;
+        color: green;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 38px;
+        text-align: left;
+        padding-left: 53px;
+        position: relative;
+        &:before{
+            position: absolute;
+            content: "\e909";
+            left: 18px;
+            top: 0;
+            font-family: "icomoon";
+
+        }
+        &.edit{
+            max-width: 145px;
+            width: 100%;
+            position: relative;
+            margin-right: auto;
+            margin-left: 20px;
+            &:before{
+                position: absolute;
+                content: "\e901";
+                font-family: "icomoon";
+                left: 22px;
+                top: 0;
+
+            }
+            
+        }
+        &.create{
+            max-width: 289px;
+            line-height: 40px;
+            border: none;
+            background: $green;
+            color: $white;
+            padding-left: 48px;
+            font-weight: 500;
+            position: relative;
+            &:before{
+                position: absolute;
+                content: "";
+                font-family: "icomoon";
+            }
+        }
+    }
+    
+ 
 
 }
 

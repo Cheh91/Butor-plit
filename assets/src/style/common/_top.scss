@@ -6,6 +6,9 @@
     padding-left: 21px;
     padding-right: 21px;
     border-bottom: 1px solid $light-gray;
+    &.border{
+        border-bottom: none;
+    }
     &__icon{
         width: 36px;
         height: 36px;

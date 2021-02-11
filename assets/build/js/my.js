@@ -2,16 +2,38 @@
 
 
 jQuery(document).ready(function () {
-  // initDropdown();
-  // openHeaderMenu();
-  // initSlider();
-  // searchRange();
-  // girlsOnline();
-  // rangeSlider();
-  // openSearchMenu();
-
+ 
+  openMenu();
+  tabs();
 
 });
+
+
+
+
+function openMenu(){
+  $(".header__menu-btn").on("click", function(){
+    $(".header__menu").toggleClass("to-active");
+    $(".modal").toggleClass("act");
+
+    if($(".header__menu").hasClass("to-active")){
+      $("body").css("overflow-y", "hidden");
+    } else {
+      $("body").css("overflow-y", "auto");
+    }
+    
+  })
+}
+
+function tabs(){
+  $(".sidebar__element-title").on("click", function(e){
+    e.preventDefault();
+
+    $(".sidebar__element-title").addClass("active");
+  })
+}
+
+
 
 // function initDropdown() {
 //   $(".drop-btn").click(function (e) {

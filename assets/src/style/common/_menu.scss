@@ -1,0 +1,95 @@
+.header__menu{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 1141px;
+    width: 100%;
+    z-index: 10;
+    transition: top 0.5s;
+    // z-index: -10;
+    &.to-active{
+        top: 85px;
+        
+        transition: top 0.5s;
+    }
+    &-wrapper{
+        height: 105px;
+        background: #FBFBFB;
+        box-shadow: 0px 4px 10px rgba(99, 99, 99, 0.2);
+        border-radius: 0px 0px 30px 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        svg path{
+            fill: $grey;
+        }
+        &-image{
+
+        }
+        &-title{
+            color: $grey;
+            font-size: 14px;
+            line-height: 16px;
+            margin-top: 5px;
+            font-weight: 400;
+        }
+        &.active{
+            svg path{
+                fill: $green;
+            }
+            .header__menu-item-title{
+                color: $green;
+                font-weight: 500;
+            }
+        }
+    }
+    form{
+        position: relative;
+    }
+    input{
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 9px;
+        border: none;
+        border-bottom: 1px solid $green;
+        font-style: italic;
+        width: 242px;
+        padding-right: 20px;
+    }
+    &-form-search{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 0px;
+        top: 2px;
+    }
+    &-btn{
+        width: 186px;
+        height: 24px;
+        background: #FBFBFB;
+        box-shadow: 0px 4px 10px rgba(99, 99, 99, 0.2);
+        border-radius: 0px 0px 20px 20px;
+        margin: 0 auto;
+        margin-top: 1px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 7px;
+        cursor: pointer;
+        &-line{
+            width: 28px;
+            height: 2px;
+            background-color: $green;
+            display: inline-block;
+            margin-bottom: 3px;
+        }
+    }
+}
+
