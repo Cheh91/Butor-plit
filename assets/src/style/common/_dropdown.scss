@@ -1,148 +1,46 @@
-// .drop{
-//     margin-left: 15px;
-//     &-1{
-//         width: 156px;
-//     }
-//     &-2{
-//         width: 104px;
-//     }
-//     &-3{
-//         width: 219px;
-//     }
-//     &-4{
-//         width: 216px;
-//     }
-//     &-basic-1{
-//         min-width: 292px;
-//         width: 100%;
-//         margin-left: 0px;
-//         @media (max-width: 480px){
-//             min-width: 200px;
-//         }
-//     }
-//     &-basic-2{
-//         min-width: 108px;
-//         width: 100%;
-//         @media (max-width: 480px){
-//             min-width: 70px;
-//         }
-//     }
-//     &-btn{
-//         background: #F9FBFD;
-//         border: 1px solid #E4E9EE;
-//         display: block;
-//         border-radius: 10px;
-//         padding: 5px 40px 5px 12px;
-//         &:after{
-//             position: absolute;
-//             position: absolute;
-//             font-family: 'ntsame';
-//             content: "\e8fe";
-//             right: 18px;
-//             top: 47%;
-//             transform: translate(0, -50%);
-//             font-size: 16px;
-//             transition: all 0.3s;
-//         }
-//     }
-//     &-btn-basic{
-//         background: rgba(255, 255, 255, 0.1);
-//         border: 1px solid rgba(255, 255, 255, 0.4);
-        
-//     }
-//     &-box{
-//         position: relative;
-//         a{
-//             color: $blue-magenta;
-//             font-size: 14px;
-//             line-height: 36px;
-//         }
-//         &.active{
-//             .drop-menu{
-//                 display: block;
-//             }
-//             .drop-btn{
-//                 &:after{
-//                     transform: rotate(180deg);
-//                     top: 12%;
-//                     transition: all 0.3s;
-//                 }
-//             }
-//         }
-//     }
-//     &-box-basic{
-//         a{
-//             color: $white;
-//             line-height: 28px;
-//         }
-//     }
-//     // &-btn.active{
-//     //     &:after{
-//     //         transform: rotate(180deg);
-//     //         top: 12%;
-//     //         transition: all 0.5s;
-//     //     }
-//     // }
-//     &-more{
-//         min-width: 308px;
-//         width: 100%;
-//         margin-left: 0px;
-//         @media (max-width: 480px){
-//             min-width: 200px;
-//         }
-//     }
-//     &-box-more{
-//         a{
-//             color: #bdbdbd;
-//             line-height: 28px;
-//         }
-//     }
-//     &-btn-more{
-//         background: #F5F5F5;
-//         &:after{
-//             position: absolute;
-//             font-family: 'ntsame';
-//             content: "\e8fe";
-//             right: 18px;
-//             top: 46.5%;
-//             transform: translate(0, -50%);
-//             font-size: 16px;
-//             color: #777;
-//         }
-//     }
-//     &-menu{
-//         margin-top: 20px;
-//         position: absolute;
-//         border: 1px solid #E4E9EE;
-//         left: 0;
-//         right: 0;
-//         border-radius: 10px;
-//         background: #F9FBFD;
-//         border: 1px solid #E4E9EE;
-//         z-index: 10;
-//         padding: 8px 12px;
-//         // opacity: 0;
-//         display: none;
-//         box-shadow: rgba(36, 39, 67, 0.15) 0px 0px 10px;
-//         a{
-//             line-height: 28px;
-//         }
-//     }
-//     &-menu-basic{
-//         a{
-//             color: $black;
-//         }
-//     }
-//     &-menu-more{
-//         a{
-//             color: #bdbdbd;
-//         }
-//     }
-//     // &-menu.active{
-//     //     display: block;
-//     // }
-// }
-
 .drop{
-    
+    &-1{
+        width: 56px;
+    }
+    &-2{
+        width: 63px;
+    }
+    &__box{
+        font-size: 14px;
+        line-height: 13.4px;
+        text-transform: uppercase;
+        color: $black;
+    }
+    &__btn{
+        color: grey;
+        background-color: #F8F8F8;
+        font-weight: 400;
+        display: block;
+        padding: 12px 24px 8px 10px;
+        border-radius: 5px; 
+    }
+    &__menu{
+        border-top: 1px solid #E5E5E5;
+        border-radius: 0px 0px 5px 5px;
+        text-align: center;
+        padding-top: 15px;
+        background-color: #F8F8F8;
+        position: absolute;
+        width: 56px;
+        display: none;
+        li{
+            margin-bottom: 12px;
+            cursor: pointer;
+        }
+    }
+    &__box{
+        &.active{
+            .drop__menu{
+                display: block;
+            }
+            .drop__btn{
+                border-radius: 5px 5px 0px 0px;
+            }
+        }
+    }
 }
