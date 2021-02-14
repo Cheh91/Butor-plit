@@ -43,18 +43,19 @@ function tabs(){
 
 
 function drop(){
-  $(".drop__box").on("click", function(e){
+  $(".drop__btn").on("click", function(e){
     e.preventDefault();
 
-    $(".drop__box").toggleClass("active");
-  })
+    $(this).closest(".drop__box").toggleClass("active");
+  });
 
   $(".drop__menu li").on("click", function(){
     let option = $(this).html();
     
-    $(".drop__btn").html(option);
+    $(this).parents(".drop__box").find(".drop__btn").html(option);
+    $(this).parents(".drop__box").removeClass("active");
 
-  })
+  });
 
   $("body").click(function (e){
     let block = $(".drop__box");
@@ -62,7 +63,7 @@ function drop(){
     if(block.has(e.target).length == 0){
       block.removeClass("active");
     }
-  })
+  });
 
 }
 

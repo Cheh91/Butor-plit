@@ -10,24 +10,49 @@
         line-height: 13.4px;
         text-transform: uppercase;
         color: $black;
+        position: relative;
     }
     &__btn{
-        color: grey;
-        background-color: #F8F8F8;
-        font-weight: 400;
         display: block;
-        padding: 12px 24px 8px 10px;
-        border-radius: 5px; 
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #5b5b5b;
+        
+        &-1{
+            color: $black;
+            background-color: #F8F8F8;
+            font-weight: 600;
+            padding: 12px 24px 8px 10px;
+            border-radius: 5px;
+           
+        }
+        &-2{
+            background-color: $white;
+            line-height: 40px;
+            padding-left: 16px;
+            border-radius: 15px;
+        }
     }
     &__menu{
         border-top: 1px solid #E5E5E5;
-        border-radius: 0px 0px 5px 5px;
         text-align: center;
         padding-top: 15px;
-        background-color: #F8F8F8;
-        position: absolute;
-        width: 56px;
         display: none;
+        font-weight: 400;
+        position: absolute;
+        left: 0;
+        right: 0;
+        &-1{
+            font-weight: 600;
+            border-radius: 0px 0px 5px 5px;
+            background-color: #F8F8F8;
+        }
+        &-2{
+            border-radius: 0px 0px 15px 15px;
+            background-color: $white; 
+            // padding-bottom: 1px;
+        }
         li{
             margin-bottom: 12px;
             cursor: pointer;
@@ -38,8 +63,11 @@
             .drop__menu{
                 display: block;
             }
-            .drop__btn{
+            .drop__btn-1{
                 border-radius: 5px 5px 0px 0px;
+            }
+            .drop__btn-2{
+                border-radius: 15px 15px 0px 0px;
             }
         }
     }

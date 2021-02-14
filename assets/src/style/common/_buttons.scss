@@ -8,6 +8,7 @@
     font-size: 14px;
     font-weight: 500;
     color: $white;
+    cursor: pointer;
     
     &-footer{
         background-color: $light-green;
@@ -63,8 +64,15 @@
             }
         }
     }
+    &.my-orders__create{
+        background-color: $green;
+        max-width: 210px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: -60px;
+    }
     
- 
 
 }
 
