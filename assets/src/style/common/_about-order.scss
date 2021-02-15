@@ -3,6 +3,7 @@
     border-radius: 15px;
     .top{
         padding-left: 25px;
+        position: relative;
     }
     &__top-title{
         display: flex;
@@ -46,7 +47,23 @@
     }
     &__manager{
         margin-left: auto;
-        width: 51px;
+        width: 55px;
+        position: relative;
+        &:after{
+            position: absolute;
+            right:0;
+            top: 10px;
+            content: "\f107";
+            font-family: "icomoon";
+            font-size: 18px;
+            transition: transform .3s;
+
+        }
+        &.active{
+            &:after{
+                transform: rotate(-180deg);
+            }
+        }
         &-icon{
             width: 36px;
             height: 36px;
@@ -223,6 +240,65 @@
         justify-content: space-between;
         padding: 0 28px 30px 24px;
         margin-top: 16px;
+    }
+    &__modal{
+        padding: 12px 18px 15px 18px;
+        background-color: rgb(241, 238, 238);
+        border-radius: 15px; 
+        font-size: 14px;
+        line-height: 17px;
+        right: 0;
+        top: 72px;
+        position: absolute;
+        z-index: 10;
+        display: none;
+        &.is-active{
+            display: block;
+        }
+        
+        &-title{
+            font-weight: 700;
+            color: $green;
+        }
+        &-name,
+        &-mail,
+        &-phone{
+            margin-top: 17px;
+            padding-left: 23px;
+            color: $grey;
+            position: relative;
+            cursor: pointer;
+            &:before{
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-family: "icomoon";
+                color: $green;
+                font-size: 14px;
+            }
+        }
+        &-name{
+            font-weight: 600;
+            &:before{
+                content: "\e909";
+            }
+            
+        }
+        &-mail{
+            display: block;
+            font-weight: 400;
+            &:before{
+                content: "\e903";
+            }
+
+        }
+        &-phone{
+            display: block;
+            font-weight: 400;
+            &:before{
+                content: "\e905";
+            }
+        }
     }
    
     

@@ -19,7 +19,10 @@
         position: relative;
         &:before{
             position: absolute;
-            content: url("../../img/header-phone.png");
+            content: "\e917";
+            font-family: "icomoon";
+            color: $green;
+            font-size: 28px;
             left: 17px;
             top: 17px;
         }
@@ -57,7 +60,10 @@
             position: relative;
             &:before{
                 position: absolute;
-                content: url("../../img/name.png");
+                content: "\e920";
+                font-family: "icomoon";
+                font-size: 20px;
+                color: $green;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
@@ -98,8 +104,8 @@
         position: relative;
         &:before{
             position: absolute;
-            // content: url("../../img/shopping-bag.png");
-            content: "\e90d";
+            content: "\e92b";
+            font-size: 20px;
             font-family: "icomoon";
             top: 50%;
             left: 50%;

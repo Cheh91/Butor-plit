@@ -6,6 +6,7 @@ jQuery(document).ready(function () {
   openMenu();
   tabs();
   drop();
+  openModal();
 
 });
 
@@ -47,6 +48,7 @@ function drop(){
     e.preventDefault();
 
     $(this).closest(".drop__box").toggleClass("active");
+    $(this).closest(".drop__box").find(".drop__btn-1, .drop__btn-2").toggleClass("active");
   });
 
   $(".drop__menu li").on("click", function(){
@@ -63,8 +65,24 @@ function drop(){
     if(block.has(e.target).length == 0){
       block.removeClass("active");
     }
+    
   });
 
+}
+
+function openModal(){
+  $(".about-order__manager-icon").on("click", function(){
+    $(".about-order__modal").toggleClass("is-active");
+    $(".about-order__manager").toggleClass("active");
+
+    // $("body").click(function (e){
+    //   let block = $(".about-order__modal");
+  
+    //   if(block.has(e.target).length == 0){
+    //     block.removeClass("is-active");
+    //   }
+    // });
+  })
 }
 
 

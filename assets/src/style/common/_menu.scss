@@ -61,13 +61,29 @@
         font-style: italic;
         width: 242px;
         padding-right: 20px;
+        outline: none;
+        background: none;
     }
     &-form-search{
-        width: 15px;
-        height: 15px;
+        width: 17px;
+        height: 17px;
         position: absolute;
         right: 0px;
         top: 2px;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer; 
+        &:before{
+            position: absolute;
+            content: "\e91b";
+            font-family: "icomoon";
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+            color: $green
+        }
     }
     &-btn{
         width: 186px;
@@ -83,6 +99,7 @@
         align-items: center;
         padding-top: 7px;
         cursor: pointer;
+       
         &-line{
             width: 28px;
             height: 2px;
