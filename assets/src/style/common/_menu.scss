@@ -13,6 +13,9 @@
         
         transition: top 0.5s;
     }
+    @media (max-width: 680px){
+        top: -1px;
+    }
     &-wrapper{
         height: 105px;
         background: #FBFBFB;

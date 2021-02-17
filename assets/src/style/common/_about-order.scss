@@ -90,11 +90,9 @@
     &__item{
         display: flex;
         align-items: center;
-        // padding: 20px 29px 30px 25px;
         &-wrapper{
             display: flex;
             align-items: center;
-            // max-width: 395px;
             width: 100%;
             padding-left: 25px;
             padding-right: 30px;
@@ -255,7 +253,6 @@
         &.is-active{
             display: block;
         }
-        
         &-title{
             font-weight: 700;
             color: $green;
@@ -280,28 +277,24 @@
         &-name{
             font-weight: 600;
             &:before{
-                content: "\e909";
+                content: "\e920";
             }
-            
         }
         &-mail{
             display: block;
             font-weight: 400;
             &:before{
-                content: "\e903";
+                content: "\e912";
             }
-
         }
         &-phone{
             display: block;
             font-weight: 400;
             &:before{
-                content: "\e905";
+                content: "\e917";
             }
         }
     }
-   
-    
 }
 
 .column-1{

@@ -4,10 +4,11 @@
 jQuery(document).ready(function () {
  
   openMenu();
-  tabs();
+  // tabs();
   drop();
   openModal();
-
+  openPersonalData();
+  openSitebarMenu();
 });
 
 
@@ -35,10 +36,10 @@ function tabs(){
     $(".sidebar__element-title").removeClass("active");
     $(this).addClass("active");
 
-    let tab = $(this).attr("href");
+    // let tab = $(this).attr("href");
 
-    $(".main__row-wrapper").removeClass("active");
-    $(tab).addClass("active");
+    // $(".main__row-wrapper").removeClass("active");
+    // $(tab).addClass("active");
   })
 }
 
@@ -82,6 +83,21 @@ function openModal(){
     //     block.removeClass("is-active");
     //   }
     // });
+  })
+}
+
+function openPersonalData(){
+  $(".sidebar__top").on("click", function(){
+    $(".sidebar__top").parent(".sidebar").find(".sidebar__data").toggleClass("active");
+    $(".sidebar__top").toggleClass("is-active");
+  })
+}
+
+
+function openSitebarMenu(){
+  $(".sidebar__data-btn").on("click", function(){
+    $(".sidebar__data-btn").parent(".sidebar").find(".sidebar__menu").toggleClass("active");
+    $(".sidebar__data-btn").toggleClass("is-active");
   })
 }
 

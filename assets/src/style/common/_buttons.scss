@@ -12,6 +12,7 @@
     
     &-footer{
         background-color: $light-green;
+        width: 200px;
     }
     &__order{
         max-width: 223px;
@@ -26,10 +27,12 @@
         position: relative;
         &:before{
             position: absolute;
-            content: "\e909";
+            content: "\e929";
             left: 18px;
             top: 0;
             font-family: "icomoon";
+            font-size: 20px;
+            font-weight: 400;
 
         }
         &.edit{
@@ -40,7 +43,7 @@
             margin-left: 20px;
             &:before{
                 position: absolute;
-                content: "\e901";
+                content: "\e910";
                 font-family: "icomoon";
                 left: 22px;
                 top: 0;
@@ -59,8 +62,9 @@
             position: relative;
             &:before{
                 position: absolute;
-                content: "";
+                content: "\e90a";
                 font-family: "icomoon";
+                font-size: 18px;
             }
         }
     }
@@ -71,6 +75,9 @@
         position: absolute;
         right: 0;
         top: -60px;
+        @media (max-width: 1024px){
+            display: none;
+        }
     }
     
 

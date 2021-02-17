@@ -1,0 +1,182 @@
+.my-orders{
+    // position: relative;
+    &__menu{
+        width: 100%;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 24px;
+        border-radius: 15px;
+        min-height: 70px;
+        &-btn{
+            color: $black;
+            span{
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: 400;
+                border-bottom: 1px solid transparent;
+            }
+            sup{
+                font-size: 12px;
+                line-height: 14px;
+                padding-left: 3px;
+            }
+            &.select{
+                color: $green;
+                span{
+                    font-weight: 600;
+                    border-bottom: 1px solid $green;
+                }
+                sup{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    &__titles{
+        background-color: #E8E8E8;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        padding-top: 7px;
+        padding-bottom: 5px;
+        margin-top: 10px;
+        &-name{
+            font-size: 12px;
+            line-height: 14px;
+            &.col-3{
+               
+                padding-right: 0px;
+            }
+            &.col-4{
+                padding-left: 24px;
+                padding-right: 4px;
+            }
+        }
+    }
+    &__item{
+        background-color: $white;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        padding-top: 16px;
+        padding-bottom: 12px;
+        margin-top: 10px;
+        
+        &-text{
+            font-size: 14px;
+            line-height: 20px;
+            color: $black;
+            font-weight: 400;
+            span{
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 500;
+                color: $green;
+                display: inline-block;   
+            }
+        }
+        &-date{
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            span{
+            }
+        }
+        &-amount{
+            font-size: 12px;
+            line-height: 18px;
+            color: $black;
+            font-weight: 400;
+            span{
+                display: block;
+                font-size: 16px;
+                line-height: 19px;
+                margin-top: 2px;
+                color: $green;
+                font-weight: 700;
+            }
+        }
+        &-inner{
+            i{
+                padding-left: 37%;
+            }
+            &-wrap{
+                display: flex;
+                align-items: center;
+                p{
+                    margin-left: 7px;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #808080;
+                    font-weight: 500;
+                }
+            }
+            &-block{
+                width: 132px;
+                display: flex;
+                justify-content: space-between; 
+                i{
+                    padding: 0px;
+                }
+                &.width{
+                    width: auto;
+                }
+            }
+            &-status{
+                font-size: 12px;
+                line-height: 14px;
+                margin-right: auto;
+                margin-left: 7px;
+                color: $yellow;
+            }
+            
+            &-btn{
+                background: none;
+                border: none;
+                width: 14px;
+                height: 14px;
+                outline: none;
+                cursor: pointer;
+                position: relative;
+                &:before{
+                    position: absolute;
+                    content: "\f105";
+                    font-family: "icomoon";
+                    top: -4px;
+                    left: 3px;
+                    font-size: 18px;
+                    color: $black;
+                }
+            }
+        } 
+    }
+}
+
+.col-1{
+    width: 20%;
+    padding-left: 29px;
+    // padding-right: 29px;
+}
+.col-2{
+    width: 11%;
+    padding-left: 18px;
+    // padding-right: 18px;
+}
+.col-3{
+    width: 20%;
+    padding-left: 48px;
+    // padding-right: 48px;
+}
+.col-4{
+    width: 15%;
+}
+.col-5{
+    width: 12%;
+}
+.col-6{
+    width: 22%;
+    padding-left: 60px;
+    // padding-right: 23px;
+}
