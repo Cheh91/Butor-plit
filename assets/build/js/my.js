@@ -88,15 +88,25 @@ function openModal(){
 
 function openPersonalData(){
   $(".sidebar__top").on("click", function(){
-    $(".sidebar__top").parent(".sidebar").find(".sidebar__data").toggleClass("active");
+    $(".sidebar__data").toggleClass("active");
     $(".sidebar__top").toggleClass("is-active");
-  })
+  });
+
+  $(".sidebar__data-close-btn").on("click", function(){
+    $(".sidebar__data").toggleClass("active")
+    $(".sidebar__top").toggleClass("is-active");
+  });
 }
 
 
 function openSitebarMenu(){
   $(".sidebar__data-btn").on("click", function(){
-    $(".sidebar__data-btn").parent(".sidebar").find(".sidebar__menu").toggleClass("active");
+    $(".sidebar__menu").toggleClass("active");
+    $(".sidebar__data-btn").toggleClass("is-active");
+  });
+
+  $(".sidebar__top-mobile-close-btn").on("click", function(){
+    $(".sidebar__menu").toggleClass("active");
     $(".sidebar__data-btn").toggleClass("is-active");
   })
 }

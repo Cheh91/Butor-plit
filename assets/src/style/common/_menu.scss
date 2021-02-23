@@ -8,6 +8,7 @@
     z-index: 10;
     transition: top 0.5s;
     // z-index: -10;
+    display: none;
     &.to-active{
         top: 85px;
         
