@@ -7,6 +7,11 @@
         width: 100%;
         height: 1px;
         background-color: #C0C0C0;
+        @media (max-width: 680px){
+            margin-left: -15px;
+            margin-right: -15px;
+            width: auto;
+        }
     }
     &__wrapper{
         display: flex;

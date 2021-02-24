@@ -8,6 +8,15 @@
     @media (max-width: 680px){
         justify-content: space-between;
     }
+    @media (max-width: 500px){
+        position: absolute;
+        max-width: 500px;
+        width: auto;
+        bottom: 25px;
+        margin-top: 0px;
+        left: 10px;
+        right: 10px;
+    }
     &__text{
         font-size: 16px;
         line-height: 22px;
@@ -19,6 +28,7 @@
         }
         @media (max-width: 400px){
             width: 100px;
+            margin-left: 10px;
 
         }
        
@@ -51,6 +61,9 @@
         outline: none;
         cursor: pointer;
         position: relative;
+        @media (max-width: 500px){
+            border: 1px solid $green;
+        }
         &.prev{
             &:before{
                 position: absolute;

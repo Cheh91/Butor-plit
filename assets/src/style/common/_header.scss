@@ -74,6 +74,9 @@
                 font-size: 14px;
                 line-height: 16px;
                 font-weight: 500;
+                @media (max-width: 450px){
+                    font-size: 12px;
+                }
                 &:before{
                     position: absolute;
                     content: "\e917";
