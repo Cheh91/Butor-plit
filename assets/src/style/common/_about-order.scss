@@ -117,6 +117,10 @@
             flex-wrap: wrap;
             position: relative;
         }
+        &.basket{
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
         &-wrapper{
             display: flex;
             align-items: center;
@@ -189,6 +193,12 @@
             font-weight: 700;
             color: $green;
             text-align: center;
+            &.basket{
+                @media (max-width: 680px){
+                    text-align: left;
+                    padding-left: 10px;
+                }
+            }
         }
         &-amount{
             font-size: 14px;
@@ -413,7 +423,7 @@
     @media (max-width: 680px){
         position: absolute;
         left: 116px;
-        top: 80px;
+        top: 90px;
         width: auto;
     }
 }
@@ -423,11 +433,23 @@
     @media (max-width: 680px){
         width: 33.3%;
     }
+    &.basket{
+        @media (max-width: 680px){
+            width: 50%;
+        }
+    }
 }
 .column-4{
     width: 10%;
     @media (max-width: 680px){
         width: 33.3%;
+    }
+    &.basket{
+        @media (max-width: 680px){
+            width: 50%;
+            text-align: end;
+            padding-right: 10px;
+        }
     }
 }
 .column-5{

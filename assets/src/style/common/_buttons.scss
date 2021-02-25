@@ -128,6 +128,49 @@
             display: none;
         }
     }
+    &__confirm{
+        background-color: $green;
+        border-radius: 15px;
+        margin-left: auto;
+        @media (max-width: 1024px){
+            width: 145px;
+        }
+        @media (max-width: 700px){
+            width: 135px;
+        }
+    }
+    &.my-discount{
+        max-width: 180px;
+        width: 100%;
+        background-color: $green;
+        padding-left: 45px;
+        position: relative;
+        font-size: 14px;
+        text-align: left;
+        &:before{
+            position: absolute;
+            content: "\e912";
+            font-family: "icomoon";
+            font-size: 18px;
+            left: 20px;
+            top: 0px;
+        }
+    }
+    &.update{
+        max-width: 126px;
+        width: 100%;
+        background-color: $green;
+        padding-left: 45px;
+        text-align: start;
+        position: relative;
+        &:before{
+            position: absolute;
+            content: "\e927";
+            font-family: "icomoon";
+            left: 15px;
+        }
+
+    }
     
 
 }

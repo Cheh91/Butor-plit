@@ -58,7 +58,7 @@ function drop(){
     e.preventDefault();
 
     $(this).closest(".drop__box").toggleClass("active");
-    $(this).closest(".drop__box").find(".drop__btn-1, .drop__btn-2").toggleClass("active");
+    $(this).closest(".drop__box").find(".drop__btn-1, .drop__btn-2, .drop__btn-4").toggleClass("active");
   });
 
   $(".drop__menu li").on("click", function(){

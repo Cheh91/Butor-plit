@@ -191,7 +191,7 @@
     </div>
 </section>
 <main class="main">
-    <section class="my-orders">
+    <section class="my-discount">
         <div class="container">
             <div class="block__wrapper">
                 <div class="sidebar">
@@ -264,259 +264,175 @@
                         </div>
                     </div>
                 </div>
-                <div class="main__row-wrapper">
 
-                    <!-- <div class="my-orders"> -->
-                    <a class="btn my-orders__create">Створити замовлення</a>
-                    <div class="my-orders__menu">
-                        <div class="top border">
+
+                <div class="main__row-wrapper">
+                    <div class="my-discount__item">
+                        <div class="my-discount__item-block">
+                            <div class="top">
+                                <div class="top__icon">
+                                    <div class="icon-crown"></div>
+                                </div>
+                                <h3 class="top__title">Ваша знижка</h3>
+                                <a class="top__help-btn" href="#">?</a>
+                            </div>
+                            <div class="discount__wrapper">
+                                <div class="discount__item">
+                                    <h3 class="discount__item-title">Сума покупок за минулий місяць</h3>
+                                    <div class="discount__item-sum">
+                                        420 000 грн.
+                                    </div>
+                                </div>
+                                <div class="discount__my">
+                                    <div class="icon-interest"></div>
+                                    <div class="discount__my-text">
+                                        Моя знижка <span>5%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-discount__item-next">
+                            <div class="top">
+                                <div class="top__icon">
+                                    <div class="icon-discount"></div>
+                                </div>
+                                <h3 class="top__title">Знижка на наступний місяць</h3>
+
+                            </div>
+                            <div class="discount__wrapper">
+                                <div class="discount__item">
+                                    <h3 class="discount__item-title">Поточна сумма покупок</h3>
+                                    <div class="discount__item-sum">
+                                        20 000 грн.
+                                    </div>
+                                </div>
+                                <div class="discount__my">
+                                    <div class="icon-interest"></div>
+                                    <div class="discount__my-text">
+                                        Моя знижка <span>5%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-discount__box">
+                        <div class="top top__my-discount">
                             <div class="top__icon">
-                                <div class="icon-shopping-bag"></div>
+                                <div class="icon-debt"></div>
                             </div>
-                            <h3 class="top__title">Мої замовлення</h3>
-                        </div>
-                        <div class="my-orders__menu-wrap">
-                            <a class="my-orders__menu-btn select" href="#"><span>Всі</span><sup>4</sup></a>
-                            <a class="my-orders__menu-btn" href="#"><span>Нові</span><sup>2</sup></a>
-                            <a class="my-orders__menu-btn" href="#"><span>В роботі</span><sup>2</sup></a>
-                            <a class="my-orders__menu-btn" href="#"><span>Очікує оплати</span></a>
-                            <a class="my-orders__menu-btn" href="#"><span>Доставляється</span></a>
-                            <a class="my-orders__menu-btn" href="#"><span>Завершено</span></a>
-                            <a class="my-orders__menu-btn" href="#"><span>Скасовано</span></a>
-                        </div>
-                        <ul class="drop drop-3">
-                                <li class="drop__box">
-                                    <a class="drop__btn drop__btn-3 select" href="#"><span>Всі</span><sup>4</sup></a>
-                                    <ul class="drop__menu drop__menu-3">
-                                        <li>
-                                            <a class="my-orders__menu-btn" href="#"><span>Нові</span><sup>2</sup></a>
-                                        </li>
-                                        <li>
-                                            <a class="my-orders__menu-btn" href="#"><span>В роботі</span><sup>2</sup></a>
-                                        </li>
-                                        <li>
-                                            <a class="my-orders__menu-btn" href="#"><span>Очікує оплати</span></a>
-                                        </li>
-                                        <li>
-                                            <a class="my-orders__menu-btn" href="#"><span>Доставляється</span></a>
-                                        </li>
-                                        <li>
-                                            <a class="my-orders__menu-btn" href="#"><span>Завершено</span></a>
-                                        </li>
-                                        <li>
-                                            <a class="my-orders__menu-btn" href="#"><span>Скасовано</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                    </div>
-                    <div class="my-orders__titles">
-                        <p class="my-orders__titles-name col-1">Номер та дата
-                            замовлення</p>
-                        <p class="my-orders__titles-name col-2">Дата відвантаження</p>
-                        <p class="my-orders__titles-name col-3">Сума замовлення</p>
-                        <p class="my-orders__titles-name col-4">Виробниче замовлення</p>
-                        <p class="my-orders__titles-name col-5">Спосіб доставки</p>
-                        <p class="my-orders__titles-name col-6">Статус заказу</p>
-                    </div>
-                    <div class="my-orders__wrapper">
-                        <div class="my-orders__item">
-                            <div class="my-orders__item-inner col-1">
-                                <p class="my-orders__item-text"><span class="my-orders__item-text__number">№ 3267264-43</span>28.11.2020 <span class="my-orders__item-text__time">22:35:01</span></p>
-                            </div>
-                            <div class="my-orders__item-inner col-2">
-                                <p class="my-orders__item-date">28.11.2020
-                                    <span>22:35:01</span>
-                                </p>
-                            </div>
-                            <div class="my-orders__item-inner col-3">
-                                <p class="my-orders__item-amount">4 товари<span>45 000 грн</span></p>
-                            </div>
-                            <div class="my-orders__item-inner col-4">
-                                <i class="icon-checkmark"></i>
-                            </div>
-                            <div class="my-orders__item-inner col-5">
-                                <img class="my-orders__item-image" src="./img/nova-poshta.png" alt="">
-                            </div>
-                            <div class="my-orders__item-inner col-6">
-                                <div class="my-orders__item-inner-block">
-                                    <i class="icon-timer"></i>
-                                    <p class="my-orders__item-inner-status">Очікує оплати</p>
-                                    <a href="about-order.html" class="my-orders__item-inner-btn"></a>
-                                </div>
+                            <h3 class="top__title">Дебіторська заборгованість</h3>
+                            <div class="my-discount__top-btn">
+                                <a href="#" class="btn my-discount">Змовити на пошту</a>
+                                <a class="top__help-btn" href="#">?</a>
                             </div>
                         </div>
-                        <div class="my-orders__item">
-                            <div class="my-orders__item-inner col-1">
-                                <p class="my-orders__item-text"><span class="my-orders__item-text__number">№ 3267264-43</span>28.11.2020 <span class="my-orders__item-text__time">22:35:01</span></p>
-                            </div>
-                            <div class="my-orders__item-inner col-2">
-                                <p class="my-orders__item-date">28.11.2020
-                                    <span>22:35:01</span>
-                                </p>
-                            </div>
-                            <div class="my-orders__item-inner col-3">
-                                <p class="my-orders__item-amount">4 товари<span>45 000 грн</span></p>
-                            </div>
-                            <div class="my-orders__item-inner col-4">
-                                <i class="icon-checkmark"></i>
-                            </div>
-                            <div class="my-orders__item-inner col-5">
-                                <div class="my-orders__item-inner-wrap">
-                                    <img class="my-orders__item-image sat" src="./img/sat.png" alt="">
-                                    <p>CAT</p>
-                                </div>
-                            </div>
-                            <div class="my-orders__item-inner col-6">
-                                <div class="my-orders__item-inner-block">
-                                    <i class="icon-timer"></i>
-                                    <p class="my-orders__item-inner-status">Очікує оплати</p>
-                                    <a href="about-order.html" class="my-orders__item-inner-btn"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-orders__item">
-                            <div class="my-orders__item-inner col-1">
-                                <p class="my-orders__item-text"><span class="my-orders__item-text__number">№ 3267264-43</span>28.11.2020 <span class="my-orders__item-text__time">22:35:01</span></p>
-                            </div>
-                            <div class="my-orders__item-inner col-2">
-                                <p class="my-orders__item-date">28.11.2020
-                                    <span>22:35:01</span>
-                                </p>
-                            </div>
-                            <div class="my-orders__item-inner col-3">
-                                <p class="my-orders__item-amount">4 товари<span>45 000 грн</span></p>
-                            </div>
-                            <div class="my-orders__item-inner col-4">
-                                <i class="icon-checkmark"></i>
-                            </div>
-                            <div class="my-orders__item-inner col-5">
-                                <div class="my-orders__item-inner-wrap">
-                                    <img class="my-orders__item-image sat" src="./img/in-time.png" alt="">
-                                    <p>Интайм</p>
-                                </div>
-                            </div>
-                            <div class="my-orders__item-inner col-6">
-                                <div class="my-orders__item-inner-block">
-                                    <i class="icon-timer"></i>
-                                    <p class="my-orders__item-inner-status">Очікує оплати</p>
-                                    <a href="about-order.html" class="my-orders__item-inner-btn"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-orders__item">
-                            <div class="my-orders__item-inner col-1">
-                                <p class="my-orders__item-text"><span class="my-orders__item-text__number">№ 3267264-43</span>28.11.2020 <span class="my-orders__item-text__time">22:35:01</span></p>
-                            </div>
-                            <div class="my-orders__item-inner col-2">
-                                <p class="my-orders__item-date">28.11.2020
-                                    <span>22:35:01</span>
-                                </p>
-                            </div>
-                            <div class="my-orders__item-inner col-3">
-                                <p class="my-orders__item-amount">4 товари<span>45 000 грн</span></p>
-                            </div>
-                            <div class="my-orders__item-inner col-4">
-                                <i class="icon-checkmark"></i>
-                            </div>
-                            <div class="my-orders__item-inner col-5">
-                                <img class="my-orders__item-image" src="./img/nova-poshta.png" alt="">
-                            </div>
-                            <div class="my-orders__item-inner col-6">
-                                <div class="my-orders__item-inner-block">
-                                    <i class="icon-timer"></i>
-                                    <p class="my-orders__item-inner-status">Очікує оплати</p>
-                                    <a href="about-order.html" class="my-orders__item-inner-btn"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-orders__item">
-                            <div class="my-orders__item-inner col-1">
-                                <p class="my-orders__item-text"><span class="my-orders__item-text__number">№ 3267264-43</span>28.11.2020 <span class="my-orders__item-text__time">22:35:01</span></p>
-                            </div>
-                            <div class="my-orders__item-inner col-2">
-                                <p class="my-orders__item-date">28.11.2020
-                                    <span>22:35:01</span>
-                                </p>
-                            </div>
-                            <div class="my-orders__item-inner col-3">
-                                <p class="my-orders__item-amount">4 товари<span>45 000 грн</span></p>
-                            </div>
-                            <div class="my-orders__item-inner col-4">
-                                <i class="icon-checkmark"></i>
-                            </div>
-                            <div class="my-orders__item-inner col-5">
-                                <div class="my-orders__item-inner-wrap">
-                                    <img class="my-orders__item-image sat" src="./img/sat.png" alt="">
-                                    <p>CAT</p>
-                                </div>
-                            </div>
-                            <div class="my-orders__item-inner col-6">
-                                <div class="my-orders__item-inner-block">
-                                    <i class="icon-timer"></i>
-                                    <p class="my-orders__item-inner-status">Очікує оплати</p>
-                                    <a href="about-order.html" class="my-orders__item-inner-btn"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-orders__item">
-                            <div class="my-orders__item-inner col-1">
-                                <p class="my-orders__item-text"><span class="my-orders__item-text__number">№ 3267264-43</span>28.11.2020 <span class="my-orders__item-text__time">22:35:01</span></p>
-                            </div>
-                            <div class="my-orders__item-inner col-2">
-                                <p class="my-orders__item-date">28.11.2020
-                                    <span>22:35:01</span>
-                                </p>
-                            </div>
-                            <div class="my-orders__item-inner col-3">
-                                <p class="my-orders__item-amount">4 товари<span>45 000 грн</span></p>
-                            </div>
-                            <div class="my-orders__item-inner col-4">
-                                <i class="icon-checkmark"></i>
-                            </div>
-                            <div class="my-orders__item-inner col-5">
-                                <div class="my-orders__item-inner-wrap">
-                                    <img class="my-orders__item-image sat" src="./img/in-time.png" alt="">
-                                    <p>Интайм</p>
-                                </div>
-                            </div>
-                            <div class="my-orders__item-inner col-6">
-                                <div class="my-orders__item-inner-block">
-                                    <i class="icon-timer"></i>
-                                    <p class="my-orders__item-inner-status">Очікує оплати</p>
-                                    <a href="about-order.html" class="my-orders__item-inner-btn"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navigation-block">
-                        <p class="navigation-block__text">
-                            Показати на сторінці
-                        </p>
-                        <ul class="drop drop-2">
-                            <li class="drop__box">
-                                <a class="drop__btn drop__btn-2" href="#">10</a>
-                                <ul class="drop__menu drop__menu-2">
-                                    <li>
-                                        10
-                                    </li>
-                                    <li>
-                                        20
+                        <div class="my-discount__period">
+                            <p>Період</p>
+                            <div class="my-discount__period-before">
+                                <p>з</p>
+                                <ul class="drop drop-date">
+                                    <li class="drop__box">
+                                        <a class="drop__btn drop__btn-4 drop__btn-date" href="#">28.01.2020</a>
+                                        <ul class="drop__menu drop__menu-4 basket">
+                                            <li>
+                                                28.01.2020
+                                            </li>
+
+                                        </ul>
                                     </li>
                                 </ul>
-                            </li>
-                        </ul>
-                        <div class="navigation-block__pagin">
-                            <p>1 - 1 від 1</p>
+                            </div>
+                            <div class="my-discount__period-after">
+                                <p>по</p>
+                                <ul class="drop drop-date">
+                                    <li class="drop__box">
+                                        <a class="drop__btn drop__btn-4 drop__btn-date" href="#">28.01.2020</a>
+                                        <ul class="drop__menu drop__menu-4 basket">
+                                            <li>
+                                                28.01.2020
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn update">Оновити</a>
                         </div>
-                        <div class="navigation-block__btn">
-                            <button class="navigation-block__button prev"></button>
-                            <button class="navigation-block__button next"></button>
+                        <div class="my-discount__data">
+                            <div class="my-discount__row">
+                                <p class="my-discount__number block-1">№ Договору</p>
+                                <p class="my-discount__currency block-2">Валюта договору</p>
+                                <p class="my-discount__postponement block-3">Відстрочка днів</p>
+                                <p class="my-discount__limit block-4">Кредитний ліміт</p>
+                                <p class="my-discount__summ block-5">Cума взаєморозрахунків</p>
+                                <p class="my-discount__amount-to-order block-6">Сума доступна до замовлення</p>
+                                <p class="my-discount__overdue block-7">Прострочка</p>
+                            </div>
+                            <div class="my-discount__row">
+                                <p class="my-discount__number block-1">42394824</p>
+                                <p class="my-discount__currency block-2">грн</p>
+                                <p class="my-discount__postponement block-3">365</p>
+                                <p class="my-discount__limit block-4">12</p>
+                                <p class="my-discount__summ block-5">12</p>
+                                <p class="my-discount__amount-to-order block-6">50 000</p>
+                                <p class="my-discount__overdue block-7">200</p>
+                            </div>
+                            <div class="my-discount__row">
+                                <p class="my-discount__number block-1">42394824</p>
+                                <p class="my-discount__currency block-2">грн</p>
+                                <p class="my-discount__postponement block-3">365</p>
+                                <p class="my-discount__limit block-4">12</p>
+                                <p class="my-discount__summ block-5">12</p>
+                                <p class="my-discount__amount-to-order block-6">50 000</p>
+                                <p class="my-discount__overdue block-7">200</p>
+                            </div>
+                            <div class="my-discount__row">
+                                <p class="my-discount__number block-1">42394824</p>
+                                <p class="my-discount__currency block-2">грн</p>
+                                <p class="my-discount__postponement block-3">365</p>
+                                <p class="my-discount__limit block-4">12</p>
+                                <p class="my-discount__summ block-5">12</p>
+                                <p class="my-discount__amount-to-order block-6">50 000</p>
+                                <p class="my-discount__overdue block-7">200</p>
+                            </div>
+                            <div class="my-discount__row">
+                                <p class="my-discount__number block-1">42394824</p>
+                                <p class="my-discount__currency block-2">грн</p>
+                                <p class="my-discount__postponement block-3">365</p>
+                                <p class="my-discount__limit block-4">12</p>
+                                <p class="my-discount__summ block-5">12</p>
+                                <p class="my-discount__amount-to-order block-6">50 000</p>
+                                <p class="my-discount__overdue block-7">200</p>
+                            </div>
+                            <div class="navigation-block my-discount">
+                                <p class="navigation-block__text my-discount">
+                                    Показати на сторінці
+                                </p>
+                                <ul class="drop drop-2">
+                                    <li class="drop__box">
+                                        <a class="drop__btn drop__btn-2 my-discount" href="#">10</a>
+                                        <ul class="drop__menu drop__menu-2 my-discount">
+                                            <li>
+                                                10
+                                            </li>
+                                            <li>
+                                                20
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="navigation-block__pagin">
+                                    <p>1 - 1 від 1</p>
+                                </div>
+                                <div class="navigation-block__btn">
+                                    <button class="navigation-block__button prev my-discount"></button>
+                                    <button class="navigation-block__button next my-discount"></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- </div> -->
-
+                    
                 </div>
             </div>
         </div>

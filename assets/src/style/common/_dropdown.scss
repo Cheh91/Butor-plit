@@ -25,6 +25,24 @@
             display: block;
         }
     }
+    &-4{
+        width: 170px;
+        @media (max-width: 1024px){
+            width: 145px;
+        }
+        @media (max-width: 700px){
+            width: 135px;
+        }
+    }
+    &-5{
+        width: 126px;
+        @media (max-width: 700px){
+            width: 135px;
+        }
+    }
+    &-date{
+        width: 150px;
+    }
     &__box{
         font-size: 14px;
         line-height: 13.4px;
@@ -38,7 +56,6 @@
         line-height: 16px;
         font-weight: 400;
         color: #5b5b5b;
-        
         &-1{
             color: $black;
             background-color: #F8F8F8;
@@ -72,8 +89,6 @@
                     font-size: 14px;
                 }
             }
-            
-           
         }
         &-2{
             background-color: $white;
@@ -128,9 +143,74 @@
                     text-transform: initial;
                 }
             }
-          
-
-
+        }
+        &-4{
+            border: 2px solid #00642f;
+            line-height: 38px;
+            border-radius: 15px;
+            padding-left: 25px;
+            position: relative;
+            font-size: 14px;
+            font-weight: 500;
+            color: $green;
+            text-transform: none;
+            position: relative;
+            &:after{
+                position: absolute;
+                top: 0;
+                right: 14px;
+                content: "\f107";
+                font-family: "icomoon";
+                font-size: 22px;
+                color: #00642f;
+                font-weight: 700;
+                transition: transform .3s;
+                font-weight: 400;
+                font-size: 20px;
+                @media (max-width: 700px){
+                    right: 8px;
+                }
+            }
+            &.active{
+                &:after{
+                    transform: rotate(-180deg);
+                }
+            }
+            span{
+                @media (max-width: 1024px){
+                    width: 65px;
+                    display: inline-block;
+                    position: absolute;
+                    line-height: 14px;
+                    left: 15px;
+                    top: 50%;
+                    transform:translate(0, -50%);
+                }
+            }
+            @media (max-width: 1024px){
+                padding-left: 15px;
+                height: 40px;
+            }
+            @media (max-width: 700px){
+                // width: 135px;
+                padding-left: 10px;
+            }
+            
+        }
+        &-date{
+            padding-left: 45px;
+            position: relative;
+            &:before{
+                position: absolute;
+                content: "\e903";
+                font-family: "icomoon";
+                left: 15px;
+                font-size: 18px;
+                color: $green;
+            }
+        }
+        &.my-discount{
+            border: 1px solid $green;
         }
     }
     &__menu{
@@ -148,7 +228,7 @@
         }
         li + li{
             @media (max-width: 830px){
-                border-top: 2px solid #111;
+                border-top: 1px solid #E7E7E7;
             }
         }
         &-1{
@@ -185,7 +265,39 @@
                     text-transform: initial;
                 }
             }
-
+        }
+        &-4{
+            border: 2px solid $green;
+            border-radius: 15px;
+            background-color: #fff;
+            padding-top: 0px;
+            text-align: left;
+            text-transform: none;
+            z-index: 10;
+            li{
+                font-size: 14px;
+                line-height: 30px;
+                font-weight: 500;
+                color: #1C1C1C;
+                padding-left: 17px;
+                border-bottom: 1px solid #E7E7E7;
+                margin-bottom: 0;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                &:last-child{
+                    border-bottom: none;
+                }
+                @media (max-width: 700px){
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                }
+            }
+            &.basket{
+                z-index: 20;
+            }
+        }
+        &.my-discount{
+            border: 1px solid $green;
         }
         
         

@@ -29,7 +29,9 @@
         @media (max-width: 400px){
             width: 100px;
             margin-left: 10px;
-
+        }
+        &.my-discount{
+            font-weight: 500;
         }
        
     }
@@ -89,6 +91,14 @@
                 color: $green;
                 font-weight: 700;
             }
-        } 
-    }  
+        }
+        &.my-discount{
+            border: 1px solid $green;
+        }
+    }
+    &.my-discount{
+        margin-top: 0;
+        padding: 28px 24px 30px 24px;
+        border-top: 1px solid #CCE3D8;
+    }
 }

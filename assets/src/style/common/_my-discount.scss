@@ -1,0 +1,128 @@
+.my-discount{
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        &-block{
+            border-radius: 15px;
+            background-color: #fff;
+            height: 155px;
+            max-width: 445px;
+            width: 100%;
+            margin-right: 10px;
+        }
+        &-next{
+            background-color: $white;
+            height: 155px;
+            border-radius: 15px;
+            max-width: 417px;
+            width: 100%;
+            margin-left: 10px;
+        }
+    }
+    &__box{
+        background-color: $white;
+        border-radius: 15px;
+        margin-top: 30px;
+    }
+    &__top-btn{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        flex-wrap: wrap;
+        max-width: 240px;
+        width: 100%;
+    }
+    &__period{
+        display: flex;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 27px;
+        padding-left: 22px;
+        p{
+            margin-right: 28px;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 500;
+        }
+        &-before{
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+            p{
+                margin-right: 8px;
+            }
+        }
+        &-after{
+            display: flex;
+            align-items: center;
+            margin-right: 34px;
+            p{
+                margin-right: 13px;
+            }
+        }
+    }
+    &__data{
+        
+    }
+    &__row{
+        padding: 24px 19px;
+        border-top: 1px solid #CCE3D8;
+        background-color: #F3F9F6;
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &:first-child{
+            font-weight: 500;
+            padding: 10px 19px;
+        }
+        &:nth-child(2n){
+            background-color: $white;
+        }
+        // &:last-child{
+        //     border-bottom: 1px solid #CCE3D8;
+        // }
+    }
+    &__number{
+        font-weight: 500;
+    }
+    &__overdue{
+        color: #CD0000;
+        font-weight: 500;
+    }
+}
+
+.icon-debt,
+.icon-discount{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 22px;
+}
+
+.block-1{
+    width: 13%;
+}
+.block-2{
+    width: 11%;
+}
+.block-3{
+    width: 13%;
+    padding-right: 30px;
+}
+.block-4{
+    width: 14%;
+    padding-right: 30px;
+}
+.block-5{
+    width: 19%;
+}
+.block-6{
+    width: 19%;
+}
+.block-7{
+    width: 13%;
+}

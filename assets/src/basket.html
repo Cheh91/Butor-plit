@@ -17,8 +17,9 @@
                             <div class="basket__number-order">
                                 <p>Номер замовлення: <span>154718-15</span></p>
                             </div>
+                            <a href="#" class="basket__top-seal"></a>
                         </div>
-                        <div class="about-order__item">
+                        <div class="about-order__item basket">
                             <div class="about-order__item-wrapper column-1">
                                 <div class="about-order__item-image">
                                     <img src="./img/plate-1.jpg" alt="">
@@ -31,21 +32,22 @@
                             <div class="about-order__item-type column-2">
                                 <p>МДФ</p>
                             </div>
-                            <div class="about-order__item-cost column-3">
+                            <div class="about-order__item-cost column-3 basket">
                                 <p>455 грн.\м.п.</p>
                             </div>
-                            <div class="quantity column-4">
+                            <div class="quantity column-4 basket">
                                 <input type="number" min="1" max="9" step="1" value="1">
                             </div>
                             <div class="basket__menu-wrap">
                                 <div class="basket__menu"></div>
                                 <div class="basket__menu-block">
                                     <button class="basket__menu-btn-close"></button>
-                                    <button class="basket__menu-btn-item"></button>
+                                    <button class="basket__menu-btn-copy"></button>
                                 </div>
                             </div>
                         </div>
-                        <div class="about-order__item">
+                        <div class="basket__line"></div>
+                        <div class="about-order__item basket">
                             <div class="about-order__item-wrapper column-1">
                                 <div class="about-order__item-image">
                                     <img src="./img/plate-1.jpg" alt="">
@@ -58,21 +60,22 @@
                             <div class="about-order__item-type column-2">
                                 <p>МДФ</p>
                             </div>
-                            <div class="about-order__item-cost column-3">
+                            <div class="about-order__item-cost column-3 basket">
                                 <p>455 грн.\м.п.</p>
                             </div>
-                            <div class="quantity column-4">
+                            <div class="quantity column-4 basket">
                                 <input type="number" min="1" max="9" step="1" value="1">
                             </div>
                             <div class="basket__menu-wrap">
                                 <div class="basket__menu"></div>
                                 <div class="basket__menu-block">
                                     <button class="basket__menu-btn-close"></button>
-                                    <button class="basket__menu-btn-item"></button>
+                                    <button class="basket__menu-btn-copy"></button>
                                 </div>
                             </div>
                         </div>
-                        <div class="about-order__item">
+                        <div class="basket__line"></div>
+                        <div class="about-order__item basket">
                             <div class="about-order__item-wrapper column-1">
                                 <div class="about-order__item-image">
                                     <img src="./img/plate-1.jpg" alt="">
@@ -85,19 +88,91 @@
                             <div class="about-order__item-type column-2">
                                 <p>МДФ</p>
                             </div>
-                            <div class="about-order__item-cost column-3">
+                            <div class="about-order__item-cost column-3 basket">
                                 <p>455 грн.\м.п.</p>
                             </div>
-                            <div class="quantity column-4">
+                            <div class="quantity column-4 basket">
                                 <input type="number" min="1" max="9" step="1" value="1">
                             </div>
                             <div class="basket__menu-wrap">
                                 <div class="basket__menu"></div>
                                 <div class="basket__menu-block">
                                     <button class="basket__menu-btn-close"></button>
-                                    <button class="basket__menu-btn-item"></button>
+                                    <button class="basket__menu-btn-copy"></button>
                                 </div>
                             </div>
+                        </div>
+                        <div class="basket__line"></div>
+                        <div class="basket__item">
+                            <div class="basket__item-together">
+                                <p>Разом</p>
+                                <span>100 000 грн</span>
+                            </div>
+                            <div class="basket__item-personal-discount">
+                                <p>Персональна знижка</p>
+                                <span>-15 000 грн</span>
+                            </div>
+                            <div class="basket__item-full-price">
+                                <p>Повна ціна зі знижкою</p>
+                                <span>85 000 грн</span>
+                            </div>
+                            <div class="basket__item-delivery-date">
+                                <p>Дата поставки<span>08.12.2020</span></p>
+                            </div>
+                        </div>
+                        <div class="basket__block">
+                            <div class="basket__block-payment-method">
+                                <ul class="drop drop-4">
+                                    <li class="drop__box">
+                                        <a class="drop__btn drop__btn-4" href="#">Спосіб оплати</a>
+                                        <ul class="drop__menu drop__menu-4 basket">
+                                            <li>
+                                                Готівковий
+                                            </li>
+                                            <li>
+                                                Безготівковий
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="basket__block-delivery-method">
+                                <ul class="drop drop-4">
+                                    <li class="drop__box">
+                                        <a class="drop__btn drop__btn-4" href="#"><span>Спосіб доставки</span></a>
+                                        <ul class="drop__menu drop__menu-4">
+                                            <li>
+                                                Спосіб 1
+                                            </li>
+                                            <li>
+                                                Спосіб 2
+                                            </li>
+                                            <li>
+                                                Спосіб 3
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="basket__block-payer">
+                                <ul class="drop drop-5">
+                                    <li class="drop__box">
+                                        <a class="drop__btn drop__btn-4" href="#">Платник</a>
+                                        <ul class="drop__menu drop__menu-4">
+                                            <li>
+                                                Платник 1
+                                            </li>
+                                            <li>
+                                                Платник 2
+                                            </li>
+                                            <li>
+                                                Платник 3
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn__confirm">Підтвердити</a>
                         </div>
                     </div>
                 </div>
