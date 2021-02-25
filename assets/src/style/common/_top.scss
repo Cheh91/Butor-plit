@@ -47,6 +47,9 @@
         border-radius: 50%;
         margin-right: 16px;
         position: relative;
+        @media (max-width: 720px){
+            margin-right: 8px;
+        }
         @media (max-width: 680px){
             width: 26px;
             height: 26px;
@@ -75,6 +78,14 @@
         color: $green;
         margin-left: auto;
         // margin-right: 10px;
+        &.my-discount{
+            position: absolute;
+            right: 12px;
+            top: 12px;
+        }
+    }
+    &__my-discount{
+        position: relative;
     }
 }
 

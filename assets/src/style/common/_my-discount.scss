@@ -2,6 +2,9 @@
     &__item{
         display: flex;
         justify-content: space-between;
+        @media (max-width: 680px){
+            flex-direction: column;
+        }
         &-block{
             border-radius: 15px;
             background-color: #fff;
@@ -9,6 +12,11 @@
             max-width: 445px;
             width: 100%;
             margin-right: 10px;
+            @media (max-width: 680px){
+                max-width: 100%;
+                margin-right: 0px;
+                height: 182px;
+            }
         }
         &-next{
             background-color: $white;
@@ -17,12 +25,19 @@
             max-width: 417px;
             width: 100%;
             margin-left: 10px;
+            @media (max-width: 680px){
+                max-width: 100%;
+                margin-left: 0px;
+                margin-top: 10px;
+                height: 182px;
+            }
         }
     }
     &__box{
         background-color: $white;
         border-radius: 15px;
         margin-top: 30px;
+        // display: none;
     }
     &__top-btn{
         display: flex;
@@ -31,6 +46,10 @@
         flex-wrap: wrap;
         max-width: 240px;
         width: 100%;
+        @media (max-width: 540px){
+            max-width: 100%;
+            margin-top: 10px;
+        }
     }
     &__period{
         display: flex;
@@ -38,26 +57,53 @@
         padding-top: 24px;
         padding-bottom: 27px;
         padding-left: 22px;
-        p{
+        position: relative;
+        @media (max-width: 680px){
+            flex-wrap: wrap;
+            padding-top: 32px;
+        }
+        &-item{
             margin-right: 28px;
             font-size: 18px;
             line-height: 21px;
             font-weight: 500;
+            @media (max-width: 1024px){
+                font-size: 14px;
+                line-height: 16px;
+                margin-right: 25px;
+            }
+            @media (max-width: 680px){
+                position: absolute;
+                left: 10px;
+                top: 33px;
+            }
         }
         &-before{
             display: flex;
             align-items: center;
             margin-right: 30px;
+            @media (max-width: 680px){
+                flex-direction: column;
+                width: 50%;
+                margin-right: 0px;
+            }
             p{
                 margin-right: 8px;
+                margin-bottom: 9px;
             }
         }
         &-after{
             display: flex;
             align-items: center;
             margin-right: 34px;
+            @media (max-width: 680px){
+                flex-direction: column;
+                width: 50%;
+                margin-right: 0px;
+            }
             p{
                 margin-right: 13px;
+                margin-bottom: 9px;
             }
         }
     }
@@ -73,6 +119,10 @@
         p{
             font-size: 14px;
             line-height: 16px;
+            @media (max-width: 1024px){
+                font-size: 12px;
+                line-height: 14px;
+            }
         }
         &:first-child{
             font-weight: 500;
@@ -101,6 +151,9 @@
     transform: translate(-50%, -50%);
     position: absolute;
     font-size: 22px;
+    @media (max-width: 680px){
+        font-size: 14px;
+    }
 }
 
 .block-1{
@@ -108,20 +161,35 @@
 }
 .block-2{
     width: 11%;
+    @media (max-width: 1024px){
+        padding-right: 20px;
+    }
 }
 .block-3{
     width: 13%;
     padding-right: 30px;
+    @media (max-width: 1024px){
+        padding-right: 40px;
+    }
 }
 .block-4{
     width: 14%;
     padding-right: 30px;
+    @media (max-width: 1024px){
+        padding-right: 50px;
+    }
 }
 .block-5{
     width: 19%;
+    @media (max-width: 1024px){
+        padding-right: 50px;
+    }
 }
 .block-6{
     width: 19%;
+    @media (max-width: 1024px){
+        padding-right: 22px;
+    }
 }
 .block-7{
     width: 13%;
