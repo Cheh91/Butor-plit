@@ -27,41 +27,245 @@
                             <a class="my-orders__menu-btn" href="#"><span>Скасовано</span></a>
                         </div>
                         <ul class="drop drop-3">
-                                <li class="drop__box">
-                                    <a class="drop__btn drop__btn-3 select" href="#"><span>Всі</span><sup>4</sup></a>
-                                    <ul class="drop__menu drop__menu-3">
-                                        <li>
-                                            <a class="my-orders__menu-btn" href="#"><span>Нові</span><sup>2</sup></a>
-                                        </li>
-                                        <li>
-                                            <a class="my-orders__menu-btn" href="#"><span>В роботі</span><sup>2</sup></a>
-                                        </li>
-                                        <li>
-                                            <a class="my-orders__menu-btn" href="#"><span>Очікує оплати</span></a>
-                                        </li>
-                                        <li>
-                                            <a class="my-orders__menu-btn" href="#"><span>Доставляється</span></a>
-                                        </li>
-                                        <li>
-                                            <a class="my-orders__menu-btn" href="#"><span>Завершено</span></a>
-                                        </li>
-                                        <li>
-                                            <a class="my-orders__menu-btn" href="#"><span>Скасовано</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <li class="drop__box">
+                                <a class="drop__btn drop__btn-3 select" href="#"><span>Всі</span><sup>4</sup></a>
+                                <ul class="drop__menu drop__menu-3">
+                                    <li>
+                                        <a class="my-orders__menu-btn" href="#"><span>Нові</span><sup>2</sup></a>
+                                    </li>
+                                    <li>
+                                        <a class="my-orders__menu-btn" href="#"><span>В роботі</span><sup>2</sup></a>
+                                    </li>
+                                    <li>
+                                        <a class="my-orders__menu-btn" href="#"><span>Очікує оплати</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="my-orders__menu-btn" href="#"><span>Доставляється</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="my-orders__menu-btn" href="#"><span>Завершено</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="my-orders__menu-btn" href="#"><span>Скасовано</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="my-orders__titles">
-                        <p class="my-orders__titles-name col-1">Номер та дата
+
+                    <table class="my-orders__table">
+                        <thead>
+                            <tr class="my-orders__title">
+                                <th class="my-orders__title-name col-1">
+                                    Номер та дата
+                                    замовлення
+                                </th>
+                                <th class="my-orders__title-name col-2">
+                                    Дата відвантаження
+                                </th>
+                                <th class="my-orders__title-name col-3">
+                                    Сума замовлення
+                                </th>
+                                <th class="my-orders__title-name col-4">
+                                    Виробниче замовлення
+                                </th>
+                                <th class="my-orders__title-name col-5">
+                                    Спосіб доставки
+                                </th>
+                                <th class="my-orders__title-name col-6">
+                                    Статус заказу
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="my-orders__item">
+                                <td class="my-orders__item-inner col-1">
+                                    <span class="my-orders__item-inner__number">№ 3267264-43</span>
+                                    <span class="my-orders__item-inner__date">28.11.2020</span>
+                                    <span class="my-orders__item-inner__time">22:35:01</span>
+                                </td>
+                                <td class="my-orders__item-inner col-2">
+                                    28.11.2020 <span class="my-orders__item-inner__time">22:35:01</span>
+                                </td>
+                                <td class="my-orders__item-inner col-3">
+                                   <span class="my-orders__item-inner__quantity">4 товари</span>
+                                   <span class="my-orders__item-inner__price">45 000 грн</span>
+                                </td>
+                                <td class="my-orders__item-inner col-4">
+                                    <span class="my-orders__item-inner-mobile">Виробниче замовлення</span>
+                                    <i class="icon-checkmark"></i>
+                                </td>
+                                <td class="my-orders__item-inner col-5">
+                                    <span class="my-orders__item-inner-mobile">Спосіб доставки</span>
+                                    <img class="my-orders__item-inner-image" src="./img/nova-poshta.png" alt="">
+                                </td>
+                                <td class="my-orders__item-inner col-6">
+                                    <span class="my-orders__item-inner-mobile">Статус заказу</span>
+                                    <i class="icon-timer"></i>
+                                    <span class="my-orders__item-inner-status">Очікує оплати</span>
+                                    <a href="about-order.html" class="my-orders__item-inner-btn"></a>
+                                </td>
+                            </tr>
+                            <tr class="my-orders__item">
+                                <td class="my-orders__item-inner col-1">
+                                    <span class="my-orders__item-inner__number">№ 3267264-43</span>
+                                    <span class="my-orders__item-inner__date">28.11.2020</span>
+                                    <span class="my-orders__item-inner__time">22:35:01</span>
+                                </td>
+                                <td class="my-orders__item-inner col-2">
+                                    28.11.2020 <span>22:35:01</span>
+                                </td>
+                                <td class="my-orders__item-inner col-3">
+                                    <span class="my-orders__item-inner__quantity">4 товари</span>
+                                    <span class="my-orders__item-inner__price">45 000 грн</span>
+                                </td>
+                                <td class="my-orders__item-inner col-4">
+                                    <span class="my-orders__item-inner-mobile">Виробниче замовлення</span>
+                                    <i class="icon-checkmark"></i>
+                                </td>
+                                <td class="my-orders__item-inner col-5">
+                                    <span class="my-orders__item-inner-mobile">Спосіб доставки</span>
+                                    <img class="my-orders__item-inner-image" src="./img/sat.png" alt="">
+                                    <span class="my-orders__item-inner-suptitle">CAT</span>
+                                </td>
+                                <td class="my-orders__item-inner col-6">
+                                    <span class="my-orders__item-inner-mobile">Статус заказу</span>
+                                    <i class="icon-timer"></i>
+                                    <span class="my-orders__item-inner-status">Очікує оплати</span>
+                                    <a href="about-order.html" class="my-orders__item-inner-btn"></a>
+                                </td>
+                            </tr>
+                            <tr class="my-orders__item">
+                                <td class="my-orders__item-inner col-1">
+                                    <span class="my-orders__item-inner__number">№ 3267264-43</span>
+                                    <span class="my-orders__item-inner__date">28.11.2020</span>
+                                    <span class="my-orders__item-inner__time">22:35:01</span>
+                                </td>
+                                <td class="my-orders__item-inner col-2">
+                                    28.11.2020 <span>22:35:01</span>
+                                </td>
+                                <td class="my-orders__item-inner col-3">
+                                    <span class="my-orders__item-inner__quantity">4 товари</span>
+                                    <span class="my-orders__item-inner__price">45 000 грн</span>
+                                </td>
+                                <td class="my-orders__item-inner col-4">
+                                    <span class="my-orders__item-inner-mobile">Виробниче замовлення</span>
+                                    <i class="icon-checkmark"></i>
+                                </td>
+                                <td class="my-orders__item-inner col-5">
+                                    <span class="my-orders__item-inner-mobile">Спосіб доставки</span>
+                                    <img class="my-orders__item-inner-image" src="./img/in-time.png" alt="">
+                                    <span>Интайм</span>
+                                </td>
+                                <td class="my-orders__item-inner col-6">
+                                    <span class="my-orders__item-inner-mobile">Статус заказу</span>
+                                    <i class="icon-timer"></i>
+                                    <span class="my-orders__item-inner-status">Очікує оплати</span>
+                                    <a href="about-order.html" class="my-orders__item-inner-btn"></a>
+                                </td>
+                            </tr>
+                            <tr class="my-orders__item">
+                                <td class="my-orders__item-inner col-1">
+                                    <span class="my-orders__item-inner__number">№ 3267264-43</span>
+                                    <span class="my-orders__item-inner__date">28.11.2020</span>
+                                    <span class="my-orders__item-inner__time">22:35:01</span>
+                                </td>
+                                <td class="my-orders__item-inner col-2">
+                                    28.11.2020 <span>22:35:01</span>
+                                </td>
+                                <td class="my-orders__item-inner col-3">
+                                    <span class="my-orders__item-inner__quantity">4 товари</span>
+                                    <span class="my-orders__item-inner__price">45 000 грн</span>
+                                </td>
+                                <td class="my-orders__item-inner col-4">
+                                    <span class="my-orders__item-inner-mobile">Виробниче замовлення</span>
+                                    <i class="icon-checkmark"></i>
+                                </td>
+                                <td class="my-orders__item-inner col-5">
+                                    <span class="my-orders__item-inner-mobile">Спосіб доставки</span>
+                                    <img class="my-orders__item-inner-image" src="./img/nova-poshta.png" alt="">
+                                </td>
+                                <td class="my-orders__item-inner col-6">
+                                    <span class="my-orders__item-inner-mobile">Статус заказу</span>
+                                    <i class="icon-timer"></i>
+                                    <span class="my-orders__item-inner-status">Очікує оплати</span>
+                                    <a href="about-order.html" class="my-orders__item-inner-btn"></a>
+                                </td>
+                            </tr>
+                            <tr class="my-orders__item">
+                                <td class="my-orders__item-inner col-1">
+                                    <span class="my-orders__item-inner__number">№ 3267264-43</span>
+                                    <span class="my-orders__item-inner__date">28.11.2020</span>
+                                    <span class="my-orders__item-inner__time">22:35:01</span>
+                                </td>
+                                <td class="my-orders__item-inner col-2">
+                                    28.11.2020 <span>22:35:01</span>
+                                </td>
+                                <td class="my-orders__item-inner col-3">
+                                    <span class="my-orders__item-inner__quantity">4 товари</span>
+                                    <span class="my-orders__item-inner__price">45 000 грн</span>
+                                </td>
+                                <td class="my-orders__item-inner col-4">
+                                    <span class="my-orders__item-inner-mobile">Виробниче замовлення</span>
+                                    <i class="icon-checkmark"></i>
+                                </td>
+                                <td class="my-orders__item-inner col-5">
+                                    <span class="my-orders__item-inner-mobile">Спосіб доставки</span>
+                                    <img class="my-orders__item-inner-image" src="./img/sat.png" alt="">
+                                    <span class="my-orders__item-inner-suptitle">CAT</span>
+                                </td>
+                                <td class="my-orders__item-inner col-6">
+                                    <span class="my-orders__item-inner-mobile">Статус заказу</span>
+                                    <i class="icon-timer"></i>
+                                    <span class="my-orders__item-inner-status">Очікує оплати</span>
+                                    <a href="about-order.html" class="my-orders__item-inner-btn"></a>
+                                </td>
+                            </tr>
+                            <tr class="my-orders__item">
+                                <td class="my-orders__item-inner col-1">
+                                    <span class="my-orders__item-inner__number">№ 3267264-43</span>
+                                    <span class="my-orders__item-inner__date">28.11.2020</span>
+                                    <span class="my-orders__item-inner__time">22:35:01</span>
+                                </td>
+                                <td class="my-orders__item-inner col-2">
+                                    28.11.2020 <span>22:35:01</span>
+                                </td>
+                                <td class="my-orders__item-inner col-3">
+                                    <span class="my-orders__item-inner__quantity">4 товари</span>
+                                    <span class="my-orders__item-inner__price">45 000 грн</span>
+                                </td>
+                                <td class="my-orders__item-inner col-4">
+                                    <span class="my-orders__item-inner-mobile">Виробниче замовлення</span>
+                                    <i class="icon-checkmark"></i>
+                                </td>
+                                <td class="my-orders__item-inner col-5">
+                                    <span class="my-orders__item-inner-mobile">Спосіб доставки</span>
+                                    <img class="my-orders__item-inner-image" src="./img/in-time.png" alt="">
+                                    <span class="my-orders__item-inner-suptitle">Интайм</span>
+                                </td>
+                                <td class="my-orders__item-inner col-6">
+                                    <span class="my-orders__item-inner-mobile">Статус заказу</span>
+                                    <i class="icon-timer"></i>
+                                    <span class="my-orders__item-inner-status">Очікує оплати</span>
+                                    <a href="about-order.html" class="my-orders__item-inner-btn"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+                    <!-- <div class="my-orders__title">
+                        <p class="my-orders__title-name col-1">Номер та дата
                             замовлення</p>
-                        <p class="my-orders__titles-name col-2">Дата відвантаження</p>
-                        <p class="my-orders__titles-name col-3">Сума замовлення</p>
-                        <p class="my-orders__titles-name col-4">Виробниче замовлення</p>
-                        <p class="my-orders__titles-name col-5">Спосіб доставки</p>
-                        <p class="my-orders__titles-name col-6">Статус заказу</p>
-                    </div>
-                    <div class="my-orders__wrapper">
+                        <p class="my-orders__title-name col-2">Дата відвантаження</p>
+                        <p class="my-orders__title-name col-3">Сума замовлення</p>
+                        <p class="my-orders__title-name col-4">Виробниче замовлення</p>
+                        <p class="my-orders__title-name col-5">Спосіб доставки</p>
+                        <p class="my-orders__title-name col-6">Статус заказу</p>
+                    </div> -->
+                    <!-- <div class="my-orders__wrapper">
                         <div class="my-orders__item">
                             <div class="my-orders__item-inner col-1">
                                 <p class="my-orders__item-text"><span class="my-orders__item-text__number">№ 3267264-43</span>28.11.2020 <span class="my-orders__item-text__time">22:35:01</span></p>
@@ -230,7 +434,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
+
+
+<!-- 
                     <div class="navigation-block">
                         <p class="navigation-block__text">
                             Показати на сторінці
@@ -255,7 +463,7 @@
                             <button class="navigation-block__button prev"></button>
                             <button class="navigation-block__button next"></button>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- </div> -->
 

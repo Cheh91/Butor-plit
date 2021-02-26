@@ -43,7 +43,8 @@ function menuTabs(){
 
 
 function tabs(){
-  $(".sidebar__element-title").on("click", function(){
+  $(".sidebar__element-title").on("click", function(e){
+    // e.preventDefault();
     
     // $("") each  window.location
 
