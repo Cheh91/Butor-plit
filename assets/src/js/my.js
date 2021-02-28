@@ -12,6 +12,7 @@ jQuery(document).ready(function () {
   menuTabs();
   quantity();
   basketMenu();
+  openOrdersMobile();
 });
 
 
@@ -47,6 +48,12 @@ function tabs(){
     // e.preventDefault();
     
     // $("") each  window.location
+    // $(".sidebar__element-title").each(function(){
+    //   // console.log(this);
+    //   if($(this).hasClass("active")){
+    //     $(this).style.css("display", "block");
+    //   } 
+    // });
 
     $(".sidebar__element-title").removeClass("active");
     $(this).addClass("active");
@@ -58,25 +65,47 @@ function drop(){
   $(".drop__btn").on("click", function(e){
     e.preventDefault();
 
-    $(this).closest(".drop__box").toggleClass("active");
-    $(this).closest(".drop__box").find(".drop__btn-1, .drop__btn-2, .drop__btn-4").toggleClass("active");
-  });
+    let allDropBox = $(".drop__box");
+    let currentDropBox = $(this).closest(".drop__box");
+    let allArrowDrop = $(".drop__box").find(".drop__btn, .drop__btn-1, .drop__btn-2, .drop__btn-3, .drop__btn-4");
+    let currentArrow = $(this).closest(".drop__box").find(".drop__btn, .drop__btn-1, .drop__btn-2, .drop__btn-3, .drop__btn-4");
 
-  $(".drop__menu li").on("click", function(){
-    let option = $(this).html();
-    
-    $(this).parents(".drop__box").find(".drop__btn").html(option);
-    $(this).parents(".drop__box").removeClass("active");
-
-  });
-
-  $("body").click(function (e){
-    let block = $(".drop__box");
-
-    if(block.has(e.target).length == 0){
-      block.removeClass("active");
+    if(currentDropBox.hasClass("active")){
+      currentDropBox.removeClass("active");
+      currentArrow.removeClass("active");
+    } else {
+      allDropBox.removeClass("active");
+      currentDropBox.addClass("active");
+      allArrowDrop.removeClass("active");
+      currentArrow.addClass("active");
     }
-    
+
+    $(".drop__menu li").on("click", function(e){
+      e.preventDefault();
+
+      let option = $(this).html();
+      
+      $(this).parents(".drop__box").find(".drop__btn").html(option);
+      $(this).parents(".drop__box").removeClass("active");
+
+      if($(".drop__menu li").hasClass("active")){
+        currentArrow.addClass("active");
+      } else {
+        currentArrow.removeClass("active");
+      }
+  
+    });
+
+    $("body").on("click", function (e){
+      let block = $(".drop__box");
+  
+      if(block.has(e.target).length == 0){
+        block.removeClass("active");
+        currentArrow.removeClass("active");
+      }
+      
+    });
+
   });
 
 }
@@ -161,6 +190,39 @@ function basketMenu(){
   })
 }
 
+function openOrdersMobile(){
+  $(".my-orders__open").on("click", function(){
+
+    let allMobileBlock = $(".mobile-block");
+    let currentMobileBlock = $(this).parents(".accordion-item").find(".mobile-block");
+    let allArrow = $(".my-orders__open");
+    let currentArrow = $(this);
+    
+
+    if(currentMobileBlock.hasClass("active")){
+      currentMobileBlock.removeClass("active");
+      currentArrow.removeClass("active");
+    } else {
+      allMobileBlock.removeClass("active");
+      currentMobileBlock.addClass("active");
+      allArrow.removeClass("active");
+      currentArrow.addClass("active");
+    }
+
+  });
+
+  $(document).on("click", function(e){
+    
+    let button = $(".my-orders__open");
+    let mobileBlock = $(".mobile-block");
+
+    if(!button.is(e.target) && button.has(e.target).length == 0) {
+      mobileBlock.removeClass("active");
+      button.removeClass("active");
+    }
+    
+  });
+}
 
 
 

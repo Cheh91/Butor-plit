@@ -213,7 +213,7 @@
                                 <li><a class="sidebar__element-title active" href="index.html">Особисті дані</a></li>
                                 <li><a class="sidebar__element-title" href="basket.html">Кошик</a></li>
                                 <li><a class="sidebar__element-title" href="my-orders.html">Мої замовлення</a></li>
-                                <li><a class="sidebar__element-title" href="#tab-4">Послуги</a></li>
+                                <li><a class="sidebar__element-title" href="services.html">Послуги</a></li>
                                 <li><a class="sidebar__element-title" href="discount.html">Мої знижки</a></li>
                                 <li><a class="sidebar__element-title" href="#tab-6">Лист очікування</a></li>
                                 <li><a class="sidebar__element-title" href="#tab-7">Написати повідомлення</a></li>
@@ -320,6 +320,7 @@
                         </div>
                     </div>
 
+
                     <div class="my-discount__box">
                         <div class="top top__my-discount">
                             <div class="top__icon">
@@ -337,12 +338,14 @@
                                 <p>з</p>
                                 <ul class="drop drop-date">
                                     <li class="drop__box">
-                                        <a class="drop__btn drop__btn-4 drop__btn-date" href="#">28.01.2020</a>
+                                        <a class="drop__btn drop__btn-4 drop__btn-date" href="#"><span class="drop__btn-date-number">28.01.2020</span></a>
                                         <ul class="drop__menu drop__menu-4 basket">
                                             <li>
-                                                28.01.2020
+                                                <span class="drop__btn-date-number">29.01.2020</span>
                                             </li>
-
+                                            <li>
+                                                <span class="drop__btn-date-number">30.01.2020</span>
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -351,92 +354,194 @@
                                 <p>по</p>
                                 <ul class="drop drop-date">
                                     <li class="drop__box">
-                                        <a class="drop__btn drop__btn-4 drop__btn-date" href="#">28.01.2020</a>
+                                        <a class="drop__btn drop__btn-4 drop__btn-date" href="#"><span class="drop__btn-date-number">28.01.2020</span></a>
                                         <ul class="drop__menu drop__menu-4 basket">
                                             <li>
-                                                28.01.2020
+                                                <span class="drop__btn-date-number">29.01.2020</span>
                                             </li>
-
+                                            <li>
+                                                <span class="drop__btn-date-number">30.01.2020</span>
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>
                             </div>
                             <a href="#" class="btn update">Оновити</a>
                         </div>
-                        <div class="my-discount__data">
-                            <div class="my-discount__row">
-                                <p class="my-discount__number block-1">№ Договору</p>
-                                <p class="my-discount__currency block-2">Валюта договору</p>
-                                <p class="my-discount__postponement block-3">Відстрочка днів</p>
-                                <p class="my-discount__limit block-4">Кредитний ліміт</p>
-                                <p class="my-discount__summ block-5">Cума взаєморозрахунків</p>
-                                <p class="my-discount__amount-to-order block-6">Сума доступна до замовлення</p>
-                                <p class="my-discount__overdue block-7">Прострочка</p>
+
+                        <table class="my-discount__table">
+                            <thead>
+                                <tr class="my-discount__row title">
+                                    <th class="my-discount__title block-1">
+                                        № Договору
+                                    </th>
+                                    <th class="my-discount__title block-2">
+                                        Валюта договору
+                                    </th>
+                                    <th class="my-discount__title block-3">
+                                        Відстрочка днів
+                                    </th>
+                                    <th class="my-discount__title block-4">
+                                        Кредитний ліміт
+                                    </th>
+                                    <th class="my-discount__title block-5">
+                                        Cума взаєморозрахунків
+                                    </th>
+                                    <th class="my-discount__title block-6">
+                                        Сума доступна до замовлення
+                                    </th>
+                                    <th class="my-discount__title block-7">
+                                        Прострочка
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="my-discount__row accordion-item">
+                                    <td class="my-discount__name block-1">42394824</td>
+                                    <td class="my-discount__name block-2 mobile-block">
+                                        <span class="my-discount__name-subtitle">Валюта договору</span>
+                                        <span class="my-discount__name-item">грн</span>
+                                    </td>
+                                    <td class="my-discount__name block-3">
+                                        <span class="my-discount__name-delay">Відстрочка</span>
+                                        <span class="my-discount__name-number">365</span>
+                                        <span class="my-discount__name-day">Днів</span>
+                                    </td>
+                                    <td class="my-discount__name block-4 mobile-block">
+                                        <span class="my-discount__name-subtitle">Кредитний ліміт</span>
+                                        <span class="my-discount__name-item">12</span>
+                                    </td>
+                                    <td class="my-discount__name block-5 mobile-block">
+                                        <span class="my-discount__name-subtitle">Cума взаєморозрахунків</span>
+                                        <span class="my-discount__name-item">5</span>
+                                    </td>
+                                    <td class="my-discount__name block-6 mobile-block">
+                                        <span class="my-discount__name-subtitle">Сума доступна до замовлення</span>
+                                        <span class="my-discount__name-item">50000</span>
+                                    </td>
+                                    <td class="my-discount__name block-7">
+                                        <span class="my-discount__name-expiration">Просрочка</span>
+                                        <span class="my-discount__name-num">200</span>
+                                        <button class="my-orders__open"></button>
+                                    </td>
+                                </tr>
+                                <tr class="my-discount__row accordion-item">
+                                    <td class="my-discount__name block-1">42394824</td>
+                                    <td class="my-discount__name block-2 mobile-block">
+                                        <span class="my-discount__name-subtitle">Валюта договору</span>
+                                        <span class="my-discount__name-item">грн</span>
+                                    </td>
+                                    <td class="my-discount__name block-3">
+                                        <span class="my-discount__name-delay">Відстрочка</span>
+                                        <span class="my-discount__name-number">365</span>
+                                        <span class="my-discount__name-day">Днів</span>
+                                    </td>
+                                    <td class="my-discount__name block-4 mobile-block">
+                                        <span class="my-discount__name-subtitle">Кредитний ліміт</span>
+                                        <span class="my-discount__name-item">12</span>
+                                    </td>
+                                    <td class="my-discount__name block-5 mobile-block">
+                                        <span class="my-discount__name-subtitle">Cума взаєморозрахунків</span>
+                                        <span class="my-discount__name-item">5</span>
+                                    </td>
+                                    <td class="my-discount__name block-6 mobile-block">
+                                        <span class="my-discount__name-subtitle">Сума доступна до замовлення</span>
+                                        <span class="my-discount__name-item">50000</span>
+                                    </td>
+                                    <td class="my-discount__name block-7">
+                                        <span class="my-discount__name-expiration">Просрочка</span>
+                                        <span class="my-discount__name-num">200</span>
+                                        <button class="my-orders__open"></button>
+                                    </td>
+                                </tr>
+                                <tr class="my-discount__row accordion-item">
+                                    <td class="my-discount__name block-1">42394824</td>
+                                    <td class="my-discount__name block-2 mobile-block">
+                                        <span class="my-discount__name-subtitle">Валюта договору</span>
+                                        <span class="my-discount__name-item">грн</span>
+                                    </td>
+                                    <td class="my-discount__name block-3">
+                                        <span class="my-discount__name-delay">Відстрочка</span>
+                                        <span class="my-discount__name-number">365</span>
+                                        <span class="my-discount__name-day">Днів</span>
+                                    </td>  
+                                    <td class="my-discount__name block-4 mobile-block">
+                                        <span class="my-discount__name-subtitle">Кредитний ліміт</span>
+                                        <span class="my-discount__name-item">12</span>
+                                    </td>
+                                    <td class="my-discount__name block-5 mobile-block">
+                                        <span class="my-discount__name-subtitle">Cума взаєморозрахунків</span>
+                                        <span class="my-discount__name-item">5</span>
+                                    </td>
+                                    <td class="my-discount__name block-6 mobile-block">
+                                        <span class="my-discount__name-subtitle">Сума доступна до замовлення</span>
+                                        <span class="my-discount__name-item">50000</span>
+                                    </td>
+                                    <td class="my-discount__name block-7">
+                                        <span class="my-discount__name-expiration">Просрочка</span>
+                                        <span class="my-discount__name-num">200</span>
+                                        <button class="my-orders__open"></button>
+                                    </td>
+                                </tr>
+                                <tr class="my-discount__row accordion-item">
+                                    <td class="my-discount__name block-1">42394824</td>
+                                    <td class="my-discount__name block-2 mobile-block">
+                                        <span class="my-discount__name-subtitle">Валюта договору</span>
+                                        <span class="my-discount__name-item">грн</span>
+                                    </td>
+                                    <td class="my-discount__name block-3">
+                                        <span class="my-discount__name-delay">Відстрочка</span>
+                                        <span class="my-discount__name-number">365</span>
+                                        <span class="my-discount__name-day">Днів</span>
+                                    </td>
+                                        
+                                    <td class="my-discount__name block-4 mobile-block">
+                                        <span class="my-discount__name-subtitle">Кредитний ліміт</span>
+                                        <span class="my-discount__name-item">12</span>
+                                    </td>
+                                    <td class="my-discount__name block-5 mobile-block">
+                                        <span class="my-discount__name-subtitle">Cума взаєморозрахунків</span>
+                                        <span class="my-discount__name-item">5</span>
+                                    </td>
+                                    <td class="my-discount__name block-6 mobile-block">
+                                        <span class="my-discount__name-subtitle">Сума доступна до замовлення</span>
+                                        <span class="my-discount__name-item">50000</span>
+                                    </td>
+                                    <td class="my-discount__name block-7">
+                                        <span class="my-discount__name-expiration">Просрочка</span>
+                                        <span class="my-discount__name-num">200</span>
+                                        <button class="my-orders__open"></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="navigation-block my-discount">
+                            <p class="navigation-block__text my-discount">
+                                Показати на сторінці
+                            </p>
+                            <ul class="drop drop-2">
+                                <li class="drop__box">
+                                    <a class="drop__btn drop__btn-2 my-discount" href="#">10</a>
+                                    <ul class="drop__menu drop__menu-2 my-discount">
+                                        <li>
+                                            10
+                                        </li>
+                                        <li>
+                                            20
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="navigation-block__pagin">
+                                <p>1 - 1 від 1</p>
                             </div>
-                            <div class="my-discount__row">
-                                <p class="my-discount__number block-1">42394824</p>
-                                <p class="my-discount__currency block-2">грн</p>
-                                <p class="my-discount__postponement block-3">365</p>
-                                <p class="my-discount__limit block-4">12</p>
-                                <p class="my-discount__summ block-5">12</p>
-                                <p class="my-discount__amount-to-order block-6">50 000</p>
-                                <p class="my-discount__overdue block-7">200</p>
-                            </div>
-                            <div class="my-discount__row">
-                                <p class="my-discount__number block-1">42394824</p>
-                                <p class="my-discount__currency block-2">грн</p>
-                                <p class="my-discount__postponement block-3">365</p>
-                                <p class="my-discount__limit block-4">12</p>
-                                <p class="my-discount__summ block-5">12</p>
-                                <p class="my-discount__amount-to-order block-6">50 000</p>
-                                <p class="my-discount__overdue block-7">200</p>
-                            </div>
-                            <div class="my-discount__row">
-                                <p class="my-discount__number block-1">42394824</p>
-                                <p class="my-discount__currency block-2">грн</p>
-                                <p class="my-discount__postponement block-3">365</p>
-                                <p class="my-discount__limit block-4">12</p>
-                                <p class="my-discount__summ block-5">12</p>
-                                <p class="my-discount__amount-to-order block-6">50 000</p>
-                                <p class="my-discount__overdue block-7">200</p>
-                            </div>
-                            <div class="my-discount__row">
-                                <p class="my-discount__number block-1">42394824</p>
-                                <p class="my-discount__currency block-2">грн</p>
-                                <p class="my-discount__postponement block-3">365</p>
-                                <p class="my-discount__limit block-4">12</p>
-                                <p class="my-discount__summ block-5">12</p>
-                                <p class="my-discount__amount-to-order block-6">50 000</p>
-                                <p class="my-discount__overdue block-7">200</p>
-                            </div>
-                            <div class="navigation-block my-discount">
-                                <p class="navigation-block__text my-discount">
-                                    Показати на сторінці
-                                </p>
-                                <ul class="drop drop-2">
-                                    <li class="drop__box">
-                                        <a class="drop__btn drop__btn-2 my-discount" href="#">10</a>
-                                        <ul class="drop__menu drop__menu-2 my-discount">
-                                            <li>
-                                                10
-                                            </li>
-                                            <li>
-                                                20
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <div class="navigation-block__pagin">
-                                    <p>1 - 1 від 1</p>
-                                </div>
-                                <div class="navigation-block__btn">
-                                    <button class="navigation-block__button prev my-discount"></button>
-                                    <button class="navigation-block__button next my-discount"></button>
-                                </div>
+                            <div class="navigation-block__btn">
+                                <button class="navigation-block__button prev my-discount"></button>
+                                <button class="navigation-block__button next my-discount"></button>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>

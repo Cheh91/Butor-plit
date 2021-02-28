@@ -42,6 +42,9 @@
     }
     &-date{
         width: 150px;
+        @media (max-width: 680px){
+            width: 125px;
+        }
     }
     &__box{
         font-size: 14px;
@@ -75,7 +78,7 @@
             }
             &.active{
                 &:after{
-                    transform: rotate(-180deg);
+                    transform: rotate(180deg);
                 }
             }
             &.mobile{
@@ -98,6 +101,7 @@
             position: relative;
             @media (max-width: 500px){
                 border: 1px solid $green;
+                padding-left: 7px;
             }
             &:after{
                 position: absolute;
@@ -109,6 +113,9 @@
                 color: #00642f;
                 font-weight: 700;
                 transition: transform .3s;
+                @media (max-width: 680px){
+                    font-size: 18px;
+                }
             }
             &.active{
                 &:after{
@@ -120,21 +127,26 @@
             border: 2px solid $green;
             line-height: 38px;
             border-radius: 15px;
-            padding-left: 15px;
+            padding-left: 10px;
             position: relative;
-            &:before{
+            &:after{
                 position: absolute;
                 content: "\f107";
                 font-family: "icomoon";
                 right: 10px;
                 top: 0px;
                 font-size: 20px;
+                transition: transform .3s;
+            }
+            &.active{
+                &:after{
+                    transform: rotate(-180deg);
+                }
             }
             &.select{
                 color: $green;
                 span{
                     font-weight: 600;
-                    // border-bottom: 1px solid $green;
                 }
                 sup{
                     font-weight: 400;
@@ -146,7 +158,7 @@
         }
         &-4{
             border: 2px solid #00642f;
-            line-height: 38px;
+            line-height: 36px;
             border-radius: 15px;
             padding-left: 25px;
             position: relative;
@@ -198,7 +210,6 @@
             
         }
         &-date{
-            padding-left: 45px;
             position: relative;
             &:before{
                 position: absolute;
@@ -207,6 +218,19 @@
                 left: 15px;
                 font-size: 18px;
                 color: $green;
+                @media (max-width: 680px){
+                    left: 7px;
+                }
+            }
+            &-number{
+                font-weight: 600;
+                padding-left: 19px;
+                @media (max-width: 1024px){
+                    padding-left: 28px;
+                }
+                @media (max-width: 680px){
+                    padding-left: 13px;
+                }
             }
         }
         &.my-discount{
@@ -258,6 +282,7 @@
             background-color: grey;
             padding-top: 0px;
             text-align: left;
+            z-index: 2;
             li{
                 @media (max-width: 830px){
                     margin-bottom: 0px;
@@ -279,7 +304,7 @@
                 line-height: 30px;
                 font-weight: 500;
                 color: #1C1C1C;
-                padding-left: 17px;
+                padding-left: 15px;
                 border-bottom: 1px solid #E7E7E7;
                 margin-bottom: 0;
                 padding-top: 8px;
@@ -287,9 +312,10 @@
                 &:last-child{
                     border-bottom: none;
                 }
-                @media (max-width: 700px){
+                @media (max-width: 680px){
                     padding-top: 4px;
                     padding-bottom: 4px;
+                    padding-left: 15px;
                 }
             }
             &.basket{
