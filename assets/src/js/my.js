@@ -111,17 +111,21 @@ function drop(){
 }
 
 function openModal(){
-  $(".about-order__manager-icon").on("click", function(){
+  $(".about-order__manager").on("click", function(){
     $(".about-order__modal").toggleClass("is-active");
     $(".about-order__manager").toggleClass("active");
 
-    // $("body").click(function (e){
-    //   let block = $(".about-order__modal");
+    $(document).on("click", function(e){
+    
+      let button = $(".about-order__manager");
+      let mobileBlock = $(".about-order__modal");
   
-    //   if(block.has(e.target).length == 0){
-    //     block.removeClass("is-active");
-    //   }
-    // });
+      if(!button.is(e.target) && button.has(e.target).length == 0) {
+        mobileBlock.removeClass("is-active");
+        button.removeClass("active");
+      }
+      
+    });
   })
 }
 
@@ -188,6 +192,17 @@ function basketMenu(){
   $(".basket__menu").on("click", function(){
     $(this).next(".basket__menu-block").toggleClass("active");
   })
+
+  $(document).on("click", function(e){
+    
+    let button = $(".basket__menu");
+    let mobileBlock = $(".basket__menu-block");
+
+    if(!button.is(e.target) && button.has(e.target).length == 0) {
+      mobileBlock.removeClass("active");
+    }
+    
+  });
 }
 
 function openOrdersMobile(){

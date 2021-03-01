@@ -1,0 +1,111 @@
+.message__block{
+    background-color: $white;
+    border-radius: 15px;
+    min-height: 482px;
+    &-wrap{
+        padding: 20px 30px 0px 25px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 680px){
+            flex-direction: column;
+            padding: 20px 10px 0 10px;
+        }
+        
+    }
+    &-wrapper{
+        &-left{
+            width: 45%;
+        }
+        &-right{
+            width: 55%;
+        }
+    }
+    &-left{
+        max-width: 383px;
+        width: 100%;
+        margin-right: 10px;
+        @media (max-width: 680px){
+            max-width: 100%;
+            margin-right: 0px;
+        }
+        
+    }
+    &-right{
+        max-width: 428px;
+        width: 100%;
+        margin-left: 10px;
+    }
+    &-title{
+        font-size: 18px;
+        line-height: 21px;
+        color: $black;
+        font-weight: 500;
+    }
+    &-item{
+        margin-top: 15px;
+        height: 330px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar{
+            width: 7px;
+            left: 15px;
+            
+        }
+        &::-webkit-scrollbar-track{
+            background: #DBDBDB;
+            border-radius: 4px;
+        }
+        &::-webkit-scrollbar-thumb{
+            background: $green;
+            border-radius: 4px;
+        }
+        &-wrap{
+            max-width: 404px;
+            width: 100%;
+            border: 1px solid #ABABAB;
+            border-radius: 15px;
+            padding: 20px 10px 10px 20px;
+            margin-bottom: 20px;
+            width: calc(100% - 15px);
+        }
+        &-title{
+            color: $green;
+            font-weight: 500;
+            span{
+                margin-right: 5px;
+            }
+        }
+        &-text{
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            color: $grey;
+            margin-top: 12px;
+            margin-bottom: 7px;
+        }
+        &__btn-detail{
+            color: #3AB54A;
+            font-size: 12px;
+            line-height: 14px;
+            cursor: pointer;
+            border-bottom: 1px dashed #3AB54A;
+        }
+    }
+}
+
+.message-text{
+    resize: none;
+    height: 248px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px 25px;
+    &::placeholder{
+        color: #ABABAB;
+        font-size: 14px;
+        line-height: 16px;
+        font-style: italic;
+        font-weight: 400;
+    }
+}

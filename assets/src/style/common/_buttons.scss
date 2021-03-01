@@ -1,6 +1,6 @@
 .btn{
     display: inline-block;
-    max-width: 200px;
+    // max-width: 200px;
     width: 100%;
     text-align: center;
     border-radius: 15px;
@@ -9,7 +9,7 @@
     font-weight: 500;
     color: $white;
     cursor: pointer;
-    
+    height: 40px;
     &-footer{
         background-color: $light-green;
         width: 200px;
@@ -46,18 +46,23 @@
             position: absolute;
             content: "\e929";
             left: 18px;
-            top: 0;
+            top: 50%;
+            transform: translate(0, -50%);
             font-family: "icomoon";
             font-size: 20px;
             font-weight: 400;
             @media (max-width: 800px){
                 left: 10px;
-                top: 12px;
+            }
+        }
+        &.services{
+            width: 223px;
+            @media (max-width: 500px){
+                width: 145px;
             }
         }
         &.edit{
-            max-width: 145px;
-            width: 100%;
+            width: 145px;
             position: relative;
             margin-right: auto;
             @media (max-width: 800px){
@@ -73,10 +78,10 @@
                 content: "\e910";
                 font-family: "icomoon";
                 left: 22px;
-                top: 0;
+                top: 45%;
+                transform: translate(0, -50%);
                 @media (max-width: 800px){
                     left: 13px;
-                    top: 11px;
                 }
             }
         }
@@ -89,6 +94,14 @@
             padding-left: 48px;
             font-weight: 500;
             position: relative;
+            span{
+                @media (max-width: 400px){
+                    width: 200px;
+                    display: block;
+                    line-height: 15px;
+                    margin: 0 auto;
+                }
+            }
             @media (max-width: 800px){
                 line-height: 14px;
                 max-width: 213px;
@@ -99,56 +112,69 @@
                 text-align: center;
                 padding-left: 0;
             }
-            @media (max-width: 350px){
-                padding-left: 40px;
-            }
             &:before{
                 position: absolute;
                 content: "\e90a";
                 font-family: "icomoon";
                 font-size: 18px;
-                @media (max-width: 800px){
-                    left: 20px;
-                }
-                @media (max-width: 500px){
-                    left: 15px;
-                    top: 6px;
-                }
+                top: 50%;
+                transform: translate(0, -50%);
+                left: 15px;
             }
             &.services{
                 padding-top: 0px;
                 padding-bottom: 0px;
-                line-height: 40px;
-                &:before{
-                    top: 0px;
+                line-height: 38px;
+                width: 176px;
+                @media (max-width: 680px){
+                    padding-top: 5px;
+                    padding-bottom: 0;
+                    line-height: 15px;
+                    width: 145px;
+                }
+                @media (max-width: 500px){
+                    padding-left: 45px;
+                    text-align: left;
+                    width: 135px;
                 }
             }
         }
         &.services{
-            max-width: 176px;
-            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
         }
     }
     &__drawing{
         border: 1px solid $green;
         color: green;
         &.services{
-            max-width: 141px;
-            width: 100%;
+            width: 238px;
             font-weight: 600;
             margin-bottom: 20px;
             position: relative;
             padding-left: 50px;
             text-align: left;
-            margin-left: 10px;
-            margin-right: 10px;
             &:before{
                 position: absolute;
                 content: "\e90f";
                 font-family: "icomoon";
                 left: 15px;
+                top: 50%;
+                transform: translate(0, -50%);
                 font-size: 20px;
                 font-weight: 500;
+            }
+            @media (max-width: 680px){
+                width: 145px;
+                line-height: 14px;
+                padding: 5px 12px 7px 42px;
+            }
+            @media (max-width: 500px){
+                width: 135px;
+                padding-left: 37px;
+                &:before{
+                    left: 10px;
+                }
             }
         }
     }
@@ -167,6 +193,7 @@
         background-color: $green;
         border-radius: 15px;
         margin-left: auto;
+        width: 170px;
         @media (max-width: 1024px){
             width: 145px;
         }
@@ -208,9 +235,29 @@
             margin: 0 auto;
             margin-top: 16px;
         }
-
     }
-    
-
+    &.message{
+        background-color: $green;
+        width: 165px;
+        position: relative;
+        font-size: 14px;
+        text-align: left;
+        padding-left: 55px;
+        margin-top: 20px;
+        &:before{
+            position: absolute;
+            content: "\e91e";
+            font-family: "icomoon";
+            color: $white;
+            top: 50%;
+            left: 20px;
+            transform: translate(0, -50%);
+            font-size: 20px;
+        }
+        @media (max-width: 680px){
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
 }
 
