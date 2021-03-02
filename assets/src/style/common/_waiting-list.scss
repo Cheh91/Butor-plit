@@ -1,0 +1,60 @@
+.waiting-list{
+    &__block{
+        background-color: $white;
+        border-radius: 15px;
+    }
+    &__form{
+        display: flex;
+        border: 1px solid #ABABAB;
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+    &__search{
+        font-size: 14px;
+        font-style: italic;
+        border: none;
+        outline: none;
+        width: 200px;
+        padding-right: 10px;
+        &-btn{
+            position: relative;
+            cursor: pointer;
+            background: none;
+            outline: none;
+            border: none;
+            &:before{
+                position: absolute;
+                content: "\e91b";
+                font-family: "icomoon";
+                left: 0;
+                top: 0;
+                font-size: 16px;
+                color: #ABABAB;
+            }
+        }
+        
+    }
+    &__wrapper{
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+    &__checkbox{
+
+    }
+    &__detail-btn{
+        color: $green;
+        border-bottom: 1px solid $green;
+        font-size: 12px;
+        line-height: 14px;
+        display: inline- n b block;
+    }
+}
+
+
+.pillar-1{
+width: 10%;
+}
+
+.pillar-2{
+    width: 20%;
+}

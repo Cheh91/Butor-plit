@@ -259,5 +259,11 @@
             transform: translate(-50%, 0);
         }
     }
+    &.clear-list{
+        color: $green;
+        width: 175px;
+        border: 1px solid $green;
+        margin-left: auto;
+    }
 }
 
